@@ -1,0 +1,29 @@
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.imgOfMe {
+    padding-top: 2rem;
+}
+
+.text-purple {
+    color: #8c43ff
+}
+
+/* .bg-purple {
+    background: #8c43ff
+} */
+
+* {
+    color: #8c43ff
+}
+
+.toMuchSpaceTop {
+    padding-top: 2rem;
+}

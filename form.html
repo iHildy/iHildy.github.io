@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/cybor/css">
   <link rel="stylesheet" href="/cybor/icon-font.min.css">
   <link rel="stylesheet" href="/cybor/free.min.css" media="all">
+  <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="bottingsupport" ></script>
   <title>Cyborsole</title>
 </head>
 
@@ -34,46 +35,7 @@
           </div>
                   <p>$100 initial then $50/m</p>
         </div>
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<div>  
-  <button class="header-button" id="checkout-button-price_HKqXZYvCI1lNGk" role="link">Purchase</button>
-</div>
-
-<div id="error-message"></div>
-
-<script>
-  (function () {
-    var stripe = Stripe('pk_live_GVP56ychdusZj8xgBTXuCa5P00pjVr8dkI');
-
-    var checkoutButton = document.getElementById('checkout-button-price_HKqXZYvCI1lNGk');
-    checkoutButton.addEventListener('click', function () {
-      // When the customer clicks on the button, redirect
-      // them to Checkout.
-      stripe.redirectToCheckout({
-        lineItems: [{ price: 'price_HKqXZYvCI1lNGk', quantity: 1 }],
-        mode: 'payment',
-        // Do not rely on the redirect to the successUrl for fulfilling
-        // purchases, customers may not always reach the success_url after
-        // a successful payment.
-        // Instead use one of the strategies described in
-        // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://hildy.dev/subscribe.html',
-        cancelUrl: 'https://hildy.dev/goodbye.html',
-      })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-    });
-  })();
-</script>
+<a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="old-cybr" >subscribe</a>
       </div>
     </header>
   </div>

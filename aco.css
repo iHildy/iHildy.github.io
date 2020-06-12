@@ -1,0 +1,63 @@
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double white;
+    color: white;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.imgOfMe {
+    padding-top: 2rem;
+}
+
+.toMuchSpaceTop {
+    padding-top: 2rem;
+}
+
+.aBitMoreSpace {
+    padding-top: 1rem;
+}
+
+.aBitMoreSpaceB {
+    padding-bottom: 1rem;
+}
+
+.toMuchSpaceRight {
+    padding-right: 1rem;
+}
+
+.discordColor {
+    color:#7289DA;
+}
+
+
+.text-black {
+    color: black;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}

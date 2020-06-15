@@ -72,3 +72,7 @@ html {
 .body {
     background-color: #343a40;
 }
+
+.card-deck {
+    display: flex;
+}

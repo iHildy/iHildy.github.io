@@ -38,6 +38,10 @@ html {
     padding-top: 1rem;
 }
 
+.aBitMoreSpace2 {
+    padding-top: 2rem;
+}
+
 .aBitMoreSpaceB {
     padding-bottom: 1rem;
 }
@@ -59,4 +63,12 @@ html {
 .card-img-top {
     height: 10vw;
     object-fit: cover;
+}
+
+.footer-margin {
+  height: 100px;
+}
+
+.body {
+    background-color: #343a40;
 }

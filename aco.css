@@ -1,30 +1,3 @@
-.abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-hr.style-eight {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double white;
-    color: white;
-    text-align: center;
-}
-hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 
 .imgOfMe {
     padding-top: 2rem;
@@ -69,10 +42,35 @@ html {
   height: 100px;
 }
 
-.body {
+body {
     background-color: #343a40;
+    overflow-x: hidden;
 }
 
 .card-deck {
     display: flex;
+}
+
+figure{
+background: black;
+}
+
+img {
+opacity: .8;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.adult {
+    float: left;
+}
+
+.kids {
+    float: right;
 }

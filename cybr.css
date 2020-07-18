@@ -1,0 +1,58 @@
+.imgOfMe {
+    padding-top: 3rem;
+}
+
+.toMuchSpaceTop {
+    padding-top: 2rem;
+}
+
+.aBitMoreSpace {
+    padding-top: 1rem;
+}
+
+.aBitMoreSpace2 {
+    padding-top: 2rem;
+}
+
+.aBitMoreSpaceB {
+    padding-bottom: 1rem;
+}
+
+.toMuchSpaceRight {
+    padding-right: 1rem;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.footer-margin {
+  height: 100px;
+}
+
+body {
+    background-color: #20202a;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: #20202a;
+    width: 400px;
+}
+
+.card-deck {
+    display: flex;
+}
+
+.faq-main-card {
+    height: 120px !important;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

@@ -1,0 +1,76 @@
+
+.imgOfMe {
+    padding-top: 2rem;
+}
+
+.toMuchSpaceTop {
+    padding-top: 2rem;
+}
+
+.aBitMoreSpace {
+    padding-top: 1rem;
+}
+
+.aBitMoreSpace2 {
+    padding-top: 2rem;
+}
+
+.aBitMoreSpaceB {
+    padding-bottom: 1rem;
+}
+
+.toMuchSpaceRight {
+    padding-right: 1rem;
+}
+
+.discordColor {
+    color:#7289DA;
+}
+
+
+.text-black {
+    color: black;
+}
+
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.footer-margin {
+  height: 100px;
+}
+
+body {
+    background-color: #343a40;
+    overflow-x: hidden;
+}
+
+.card-deck {
+    display: flex;
+}
+
+figure{
+background: black;
+}
+
+img {
+opacity: .8;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.adult {
+    float: left;
+}
+
+.kids {
+    float: right;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "iHildy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o /public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iHildy/iHildy.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iHildy/iHildy.github.io/issues"
+  },
+  "homepage": "https://github.com/iHildy/iHildy.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.3"
+  }
+}

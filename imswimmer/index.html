@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Swimmer Time Search</title>
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/src/img/logo.png"/>
+
+<style>
+    ::placeholder {
+        color: red;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: red;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: red;
+    }
+</style>
+
+<!-- css -->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav class="bg-blue-500">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                    aria-label="Main menu" aria-expanded="false">
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex-shrink-0">
+                    <img class="block lg:hidden h-16 w-auto"
+                        src="src/img/swimmerLogo.svg" alt="Workflow logo">
+                    <img class="hidden lg:block h-16 w-auto"
+                        src="src/img/swimmerLogo.svg" alt="Workflow logo">
+                </div>
+                <div class="hidden sm:block sm:ml-6 pt-3">
+                    <div class="flex">
+                        <a href="instructions.html"
+                            class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-blue-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Instructions</a>
+                        <a href="example.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Example</a>
+                        <a href="about.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
+                        <a href="times.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Time
+                            Standards</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <!-- dropdown -->
+                <div class="ml-3 relative sm:hidden hidden">
+                    <div class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out"
+                            id="user-menu">
+                        <a href="instructions.html"
+                            class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Instructions</a>
+                        <a href="example.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Example</a>
+                        <a href="about.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
+                        <a href="times.html"
+                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Time
+                            Standards</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden sm:hidden">
+        <div class="px-2 pt-2 pb-3">
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Instructions</a>
+            <a href="#"
+                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Example</a>
+            <a href="#"
+                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
+            <a href="#"
+                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Time Standards</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                    fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+    
+                <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                </div>
+                <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                    <div class="rounded-lg shadow-md">
+                        <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical"
+                            aria-labelledby="main-menu">
+                        </div>
+                    </div>
+                </div>
+    
+                <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h2
+                            class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                            USA Swimmer
+                            <br>
+                            <span class="text-blue-500">Time Search</span>
+                        </h2>
+                        <p
+                            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            View your swimmers times and cuts in one place!
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="font-sans text-black  bg-white">
+                                <div class="border rounded overflow-hidden flex ">
+                                    <input type="text" class="px-4 py-2 bg-gray-300 text-white w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium text-blue-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-500 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-1" placeholder="Michael Phelps">
+                                    <a href="/imswimmer/example.html" class="flex items-center justify-center px-4 border-l bg-gray-200">
+                                        <button class="flex items-center justify-center px-4 border-l bg-gray-200">
+                                            <svg class="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                                    Times take a bit to load, please be patient.
+                                </p>
+                            
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="example.html"
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-500 bg-gray-300 hover:bg-gray-200 focus:outline-none focus:shadow-outline-blue focus:border-blue-500 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover hidden sm:hidden lg:block md:h-96 lg:w-full lg:h-full"
+                src="https://i.pinimg.com/originals/fe/32/1e/fe321ecb00af2d09e89498f756ed9ada.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="mt-3 text-black text-center text-gray-500 sm:mt-5 sm:text-lg">
+        <p>Made with love by <a class="text-blue-500" href="http://ionpy.com/">Kevin Fang</a> and <a class="text-blue-500" href="https://hildy.dev">Ian Hildebrand</a></p>
+    </div>
+</main>
+
+
+
+
+</body>
+
+</html>

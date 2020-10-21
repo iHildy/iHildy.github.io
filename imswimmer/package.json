@@ -1,0 +1,24 @@
+{
+  "name": "imswimmer-responsive",
+  "version": "1.0.0",
+  "description": "[Future Project] \"Fork\" of imswimmer.com to make it more responsive and look better using tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o ./styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iHildy/imswimmer-responsive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iHildy/imswimmer-responsive/issues"
+  },
+  "homepage": "https://github.com/iHildy/imswimmer-responsive#readme",
+  "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
+    "tailwindcss": "^1.8.13"
+  }
+}

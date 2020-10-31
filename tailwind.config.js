@@ -26,6 +26,7 @@ module.exports = {
         // secondary: "#",
         offwhite: "#f5f5f5",
         offgray: "#202020",
+        discord: "#7289DA",
       }
     }
   },

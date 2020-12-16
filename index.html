@@ -17,14 +17,14 @@
     <meta property="og:site_name" content="iHildy - Ian" />
     <meta property="og:description"
         content="Front-end Web Developer" />
-    <link href="/public/img/circle-pfp.png" rel="icon" type="image/png">
+    <link href="public/img/circle-pfp.png" rel="icon" type="image/png">
 
     <!-- title -->
     <title>iHildy - Ian</title>
 
     <!-- css -->
     <link rel="stylesheet" href="public/css/tailwind.css">
-    <link href="public/site.css" rel="stylesheet">
+    <link href="public/css/site.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -40,28 +40,28 @@
         gtag('config', 'UA-179614158-1');
     </script>
 </head>
-<body class="bg-gray-100">
-<div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+<body class="bg-gray-100 font-body mx-3">
+<div class="min-h-screen py-6 flex flex-col justify-center sm:py-12" id="intro">
   <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-light-green-500 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-    <div class="relative px-4 py-10 bg-white shadow-2xl sm:rounded-3xl sm:p-20">
+    <div class=" absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl"></div>
+    <div class="relative px-4 py-10 bg-white shadow-2xl rounded-3xl sm:p-20">
       <div class="max-w-md mx-auto">
-        <div>
-          <img src="/img/logo.svg" class="h-7 sm:h-8" />
+        <div class="flex justify-between">
+          <img src="public/img/Blue PFP.png" draggable="false" class="h-28 rounded-full"/>
+          <span id="changing-word" class="text-shadow text-4xl font-extrabold my-auto text-dark text-right">iHildy</span>
         </div>
         <div class="divide-y divide-gray-200">
-          <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-            <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
+          <div class="py-8 text-base leading-6 space-y-4 text-gray-900 sm:text-lg sm:leading-7">
+            <p class="">I'm currently a <span class="text-xl text-primary-600">Front-End Web Developer</span> focusing on the reselling community.</p>
             <ul class="list-disc space-y-2">
               <li class="flex items-start">
                 <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                  <svg class="flex-shrink-0 h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                 </span>
                 <p class="ml-2">
-                  Customizing your
-                  <code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
+                  HTML
                 </p>
               </li>
               <li class="flex items-start">
@@ -71,8 +71,7 @@
                   </svg>
                 </span>
                 <p class="ml-2">
-                  Extracting classes with
-                  <code class="text-sm font-bold text-gray-900">@apply</code>
+                  CSS
                 </p>
               </li>
               <li class="flex items-start">
@@ -81,22 +80,41 @@
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                 </span>
-                <p class="ml-2">Code completion with instant preview</p>
+                <p class="ml-2">JavaScript</p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">Bootstrap</p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">Tailwind CSS</p>
               </li>
             </ul>
-            <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+            <!-- <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p> -->
+            <div class="flex flex-row mx-auto justify-center space-x-4">
+                <a href="https://github.com/ihildy" target="_blank"><i class="fab fa-github fa-2x p-2 bg-primary-200 rounded-lg"></i></a>
+                <a href="https://github.com/ihildy" target="_blank"><i class="fab fa-twitter fa-2x p-2 bg-primary-200 rounded-lg"></i></a>
+                <a href="https://github.com/ihildy" target="_blank"><i class="fab fa-discord fa-2x p-2 bg-primary-200 rounded-lg"></i></a>
+            </div>
           </div>
-          <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-            <p>Want to dig deeper into Tailwind?</p>
-            <p>
-              <a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700"> Read the docs &rarr; </a>
-            </p>
+          <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7 py-">
+            <p>Want to see my past projects? <br>Scroll Down!</p>
+            <img src="public/img/Arrow.svg" alt="arrow" class="pt-5 mx-auto h-16 floating">
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+<script src="public/js/app.js"></script>
 </body>
 </html>

@@ -25,6 +25,9 @@ module.exports = {
         
         gray: colors.trueGray,
       },
+      fontFamily: {
+        body: ['JetBrains Mono']
+      }
     },
   },
   variants: {},

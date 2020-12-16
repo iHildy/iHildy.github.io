@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
 
+@import url('/public/fonts/FontsFree-Net-SFProDisplay-Regular.ttf');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +23,7 @@
 }
 
 .projects-card {
-    @apply rounded-xl overflow-hidden shadow-2xl relative ring ring-green-500 bg-gray-300 p-2 md:transform hover:scale-110 trans-5;
+    @apply rounded-xl overflow-hidden shadow-2xl relative ring ring-primary-500 bg-gray-300 p-2 md:transform hover:scale-110 trans-5;
 }
 
 .projects-title {
@@ -37,5 +39,5 @@
 }
 
 .projects-btn {
-    @apply px-6 py-3 bg-gray-500 hover:bg-gray-600 bg-opacity-50 hover:bg-opacity-50 trans-3 font-medium rounded-xl;
+    @apply px-6 py-3 bg-gray-500 hover:bg-gray-600 bg-opacity-50 hover:bg-opacity-50 trans-3 font-semibold rounded-xl;
 }

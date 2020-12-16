@@ -72,5 +72,5 @@ html {
 }
 
 .text-shadow {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.241), 0 1px 2px rgba(0, 0, 0, 0.186);
+    text-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06);
 }

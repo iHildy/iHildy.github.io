@@ -26,7 +26,8 @@ module.exports = {
         gray: colors.trueGray,
       },
       fontFamily: {
-        body: ['JetBrains Mono']
+        'name': 'JetBrains Mono',
+        'para': 'SF Pro Display Regular'
       }
     },
   },

@@ -1,37 +1,36 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-    // defaultLineHeights: true,
-    // standardFontWeights: true
-  },
-  purge: [],
+  purge: [
+     './*.html',
+     './**/*.html',
+   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      // screens: {
-      //   'sm': '640px',
-      //   // => @media (min-width: 640px) { ... }
-
-      //   'md': '780px',
-      //   // => @media (min-width: 768px) { ... }
-
-      //   'lg': '1034px',
-      //   // => @media (min-width: 1024px) { ... }
-
-      //   'xl': '1290px',
-      //   // => @media (min-width: 1280px) { ... }
-      // },
       colors: {
-        // primary: "#",
-        // secondary: "#",
         offwhite: "#f5f5f5",
-        offgray: "#202020",
-        discord: "#7289DA",
+        darkgray: "#32373b",
+
+        primary: {
+        '900': '#142C28',
+        '800': '#20453E',
+        '700': '#449194',
+        '600': '#398384',
+        '500': '#60B9A9',
+        '400': '#60B9B9',
+        '300': '#5BBDC0',
+        '200': '#7CCECE',
+        },
+        
+        gray: colors.trueGray,
+      },
+      fontFamily: {
+        'name': 'JetBrains Mono',
+        'para': 'SF Pro Display Regular'
       }
-    }
+    },
   },
-  variants: {
-    animation: ['responsive', 'motion-safe', 'motion-reduce']
-  },
-  plugins: []
+  variants: {},
+  plugins: [],
 }

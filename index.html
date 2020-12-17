@@ -7,24 +7,24 @@
 
     <!-- embed -->
     <meta name="description"
-        content="Front-end Web Deveoper">
+        content="Front-End Web Deveoper">
     <meta name="keywords"
         content="Front-end, web, developer, ihildy, iHildy, reselling, websites">
-    <meta name="theme-color" content="#10f7e6">
-    <meta property="og:title" content="Click Me to learn more about me!" />
+    <meta name="theme-color" content="#60B9B9">
+    <meta property="og:title" content="Click this to learn more about me!" />
     <meta property="og:url" content="https://hildy.dev/" />
-    <meta property="og:image" content="https://hildy.dev/public/img/circle-pfp.png" /><!-- ADD PICTURE HERE -->
+    <meta property="og:image" content="https://hildy.dev/public/img/Planet.png" />
     <meta property="og:site_name" content="iHildy - Ian" />
     <meta property="og:description"
         content="Front-end Web Developer" />
-    <link href="/public/img/circle-pfp.png" rel="icon" type="image/png">
+    <link href="public/img/Planet.png" rel="icon" type="image/png">
 
     <!-- title -->
     <title>iHildy - Ian</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="public/styles.css">
-    <link href="public/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <link href="public/css/site.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -40,227 +40,230 @@
         gtag('config', 'UA-179614158-1');
     </script>
 </head>
-<body class="bg-offwhite">
-    <div>
-        <div class="bg-blue-900 text-center py-4 lg:px-4">
-            <a href="https://hildy.dev/templates">
-                <div class="p-2 bg-blue-800 items-center text-offwhite leading-none lg:rounded-full flex lg:inline-flex"
-                    role="alert">
-                    <span class="flex rounded-full bg-blue-600 uppercase px-2 py-1 text-xs font-bold mr-3">New Here?</span>
-                    <span class="font-semibold mr-2 text-left flex-auto">Get a cool site for your group or bot for cheap, just click me!</span>
-                    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                        <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg>
-                </div>
-            </a>
+<body class="bg-gray-100 font-body mx-3">
+<div class="min-h-screen py-6 flex flex-col justify-center sm:py-12" id="intro">
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl"></div>
+    <div class="relative px-4 py-10 intro-box shadow-2xl rounded-3xl sm:p-20">
+      <div class="max-w-md mx-auto">
+        <div class="flex justify-between">
+          <img src="public/img/Blue PFP.png" draggable="false" class="h-28 rounded-full"/>
+          <span id="changing-word" class="text-shadow text-4xl font-extrabold my-auto text-gray-900 text-right text-shadow font-name">iHildy</span>
         </div>
-
-        <main class="pt-10 mx-3">
-            <section class="text-center" id="intro">
-                <!-- <img src="/public/img/circle-pfp.png" alt="pfp" class="rounded-full h-40 pb-6 mx-auto"> -->
-                <h1 class="text-xl md:text-3xl font-bold">Hi I'm Ian, you can call me <span class="text-4xl text-blue-700">iHildy</span></h1>
-                <h3 class="text-md md:text-xl">
-                    I'm currently a <span class="text-xl md:text-2xl font-semibold">Front-End Web Developer</span> focusing on the reselling community.
-                </h3>
-
-                <div class="mx-auto text-center pt-5 fa-2x space-x-8 text-gray-800">
-                    <a href="https://twitter.com/ianhildy" target="_blank" class="rounded-md bg-gray-400 px-2 py-1 hover:text-blue-700"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/iHildy" target="_blank" class="rounded-md bg-gray-400 px-2 py-1 hover:text-blue-700"><i class="fab fa-github"></i></a>
-                    <a href="https://discord.gg/tnV6unB" target="_blank" class="rounded-md bg-gray-400 px-2 py-1 hover:text-blue-700"><i class="fab fa-discord"></i></a>
-                </div>
-
-                <div class="text-center pt-3 text-blue-700">
-                    <p class="text-xl text-gray-800 font-bold hover:text-blue-700">ian@jedi.net</p>
-                </div>
-
-                <div class="grid grid-cols-3 lg:grid-cols-5 gap-4 pt-8 px-6">
-                    <div>
-                        <i class="fab fa-html5 fa-3x text-orange-600"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-css3-alt fa-3x text-blue-600"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-js fa-3x text-yellow-500"></i>
-                    </div>
-                    <div>
-                        <i class="fab fa-bootstrap fa-3x text-purple-600"></i>
-                    </div>
-                    <div class="mx-auto my-auto">
-                        <img src="/public/img/tailwindcss-mark.6ea76c3b72656960a6ae5ad8b85928d0.svg" alt="Tailwind" class="h-8 w-auto">
-                    </div>
-                </div>
-            </section>
-
-            <section class="container mx-auto my-16" id="projects">
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8">
-                    <!-- cards -->
-
-                        <!-- <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/alienios.png" alt="Hildy Templates" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a href="#">Alien Raffles iOS</a></span>
-                        
-                                <span class="block text-sm">This site really shows my potential and is my current favorite.</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div> -->
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/hildytemplates.png" alt="Hildy Templates" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a href="https://hildy.dev/templates">Hildy
-                                        Templates</a></span>
-                        
-                                <span class="block text-sm">A collection of templates for reselling related websites. If you are intresting in
-                                    purchasing one go ahead and fill out a form!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/summit.png" alt="Summit IO" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                                <span class="font-bold text-2xl hover:text-blue-700"><a target="_blank"
-                                        href="https://summitio.net/">Summit</a></span>
-                                <span class="block text-sm">I developed all of the front-end, I cant wait to see this company grow. The product is great!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/oneclicks.png" alt="oneclicks" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a target="_blank"
-                                        href="https://www.oneclicks.shop/">OneclickGmails</a></span>
-                        
-                                <span class="block text-sm">This site is for OneclickGmails and provides a way of purchasing through shoppy embeds. Was a fun project to work on!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/sapience.png" alt="SapienceIO" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a target="_blank"
-                                        href="https://www.sapience-io.com/">SapienceIO</a></span>
-                        
-                                <span class="block text-sm">All developed and designed by me, group is great and staff are nice. Really proud of the colors and animations!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/fundementals.png" alt="The Fundementals" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a target="_blank"
-                                        href="https://thefunementals.netlify.app/">The Fundementals</a></span>
-                        
-                                <span class="block text-sm">This was my first sneaker related project, I tried really hard on this and it came
-                                    out great! Not live yet!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/imswimmer.png" alt="IM-Swimmer Redesign" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a href="/imswimmer/index.html" target="_blank">IM-Swimmer
-                                        Redesign</a></span>
-                        
-                                <span class="block text-sm">It's not hosted anywhere but its a project for a friend that looks up your
-                                    competitive swim times and compares them to swimming standards.</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-green-400 rounded-full px-1 text-center text-green-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/webed.png" alt="WebEd" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a target="_blank"
-                                        href="https://webed.netlify.app/">WebEd</a></span>
-                        
-                                <span class="block text-sm">This is a personal project of mine, lots of bugs and not much content, but it looks good! It is
-                                no-where near done.</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-yellow-400 rounded-full px-1 text-center text-yellow-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/botbroker.png" alt="BotBroker Clone" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a
-                                        href="https://darkbotbroker.vercel.app/">Dark BotBroker</a></span>
-                        
-                                <span class="block text-sm">It will be a dark mode botbroker clone, I have not started yet but I can't wait to start and share with everyone!</span>
-                            </div>
-                            <div>
-                                <span class="bg-yellow-400 rounded-full px-1 text-center text-yellow-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-                        
-                        <div class="rounded-xl overflow-hidden shadow-xl relative">
-                            <img src="public/img/yourProject.jpg" alt="Your next website" class="w-auto h-auto" draggable="false">
-                            <div class="m-4">
-                        
-                                <span class="font-bold text-2xl hover:text-blue-700"><a href="#">Your Next Website...</a></span>
-                        
-                                <span class="block text-sm">Get in contact with me with the social buttons above to talk to me about your next project!</span>
-                            </div>
-                            <div>
-                                <span
-                                    class="bg-red-400 rounded-full px-1 text-center text-red-900 absolute top-0 right-0 m-3 float-right"><i
-                                        class="fas fa-circle"></i></span>
-                            </div>
-                        </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p class="p-3 text-xs md:text-base text-center font-semibold">This is temporary site because I have lots of projects right now, this will look
-                pretty later.</p>
-        </footer>
+        <div class="divide-y divide-gray-200">
+          <div class="py-8 text-base leading-6 space-y-4 text-gray-900 sm:text-lg sm:leading-7">
+            <p class="text-shadow"><span class="text-xl text-gray-100">Front-End Web Developer</span> focusing on the reselling community.</p>
+            <ul class="list-disc space-y-2 text-shadow">
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">
+                  HTML
+                </p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">
+                  CSS
+                </p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">JavaScript</p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">Bootstrap</p>
+              </li>
+              <li class="flex items-start">
+                <span class="h-6 flex items-center sm:h-7">
+                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <p class="ml-2">Tailwind CSS</p>
+              </li>
+            </ul>
+            <!-- <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p> -->
+            <div class="pt-2 flex flex-row mx-auto justify-center space-x-4">
+                <a href="https://github.com/ihildy" target="_blank"><i class="fab fa-github fa-2x p-2 bg-primary-200 rounded-lg text-gray-900 hover:text-gray-700 trans-3"></i></a>
+                <a href="https://twitter.com/ianhildy" target="_blank"><i class="fab fa-twitter fa-2x p-2 bg-primary-200 rounded-lg text-gray-900 hover:text-gray-700 trans-3"></i></a>
+                <a href="https://discord.gg/tnV6unB" target="_blank"><i class="fab fa-discord fa-2x p-2 bg-primary-200 rounded-lg text-gray-900 hover:text-gray-700 trans-3"></i></a>
+            </div>
+            <p class="text-center pt-1 font-bold">iHildy#3839 <span class="text-gray-100">//</span> ian@jedi.net</p>
+          </div>
+          <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7 text-gray-900 text-shadow">
+            <p>Want to see my past projects? <br>Scroll Down!</p>
+            <img src="public/img/Arrow.svg" alt="arrow" draggable="false" class="pt-5 mx-auto h-16 floating">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+<section class="container mx-auto my-20" id="projects">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">VanishedIO</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/example-img.jpg" alt="VanishedIO" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://www.vanishedio.com/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div> -->
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">AlienRaffles iOS</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/alienios.png" alt="AlienRaffles iOS" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://alienios.netlify.app/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Linear Tools</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/linear.png" alt="Linear" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://linear.tools/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Summit</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/summit.png" alt="Summit" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://summitio.net/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">OneClicks</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/oneclicks.png" alt="OneClicks" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://www.oneclicks.shop/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Fundamentals</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/fundamentals.png" alt="Fundamentals" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://thefunementals.netlify.app/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Gophr</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/gophr.png" alt="gophr" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://gophr.ai/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Sapience</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/sapience.png" alt="Sapience" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://www.sapience-io.com/" target="_blank" class="projects-btn">Visit</a>
+        <a class="projects-btn cursor-not-allowed">Private</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">Dark BotBroker</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/dark-botbroker.png" alt="Summit" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://darkbotbroker.vercel.app/" target="_blank" class="projects-btn">Visit</a>
+        <a href="https://github.com/iHildy/darkmode-botbroker" target="_blank" class="projects-btn">Code</a>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">WebEd</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/webed.png" alt="Summit" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="https://webed.netlify.app/" target="_blank" class="projects-btn">Visit</a>
+        <a href="https://github.com/iHildy/webed.dev" target="_blank" class="projects-btn">Code</a>
+      </div>
+    </div>
+
+    <!-- <div class="projects-card">
+      <div class="projects-title">
+        <h1 class="text-shadow">IM Swimmer</h1>
+      </div>
+      <div class="p-2">
+        <img draggable="false" src="public/img/projects/imswimmer.png" alt="Summit" class="projects-img">
+      </div>
+      <div class="projects-btn-group">
+        <a href="imswimmer" target="_blank" class="projects-btn">Visit</a>
+        <a href="https://github.com/iHildy/imswimmer-responsive" target="_blank" class="projects-btn">Code</a>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+<script src="public/js/app.js"></script>
 </body>
 </html>

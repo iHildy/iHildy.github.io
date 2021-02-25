@@ -23,7 +23,7 @@
 }
 
 .projects-card {
-    @apply rounded-xl overflow-hidden shadow-2xl relative bg-gray-50 p-2 md:transform hover:scale-110 trans-5;
+    @apply rounded-xl overflow-hidden shadow-2xl relative bg-gray-50 p-2;
 }
 
 .projects-title {
@@ -39,9 +39,5 @@
 }
 
 .projects-btn {
-    @apply px-6 py-3 bg-primary-500 hover:bg-primary-600 trans-3 font-semibold rounded-xl;
-}
-
-.private-projects-btn {
-    @apply px-6 py-3 bg-gray-400 font-semibold rounded-xl;
+    @apply px-6 py-3 bg-primary-500 hover:bg-primary-600 trans-3 font-semibold rounded-xl mx-auto;
 }

@@ -132,6 +132,54 @@ function Features() {
                     />
                   </div>
                 </a>
+                <div className='grid grid-cols-2 gap-3'>
+                  <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 4
+                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                      : "bg-gray-200 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(4);
+                  }}
+                >
+                <div className="text-center md:text-left flex-1 font-bold leading-snug tracking-tight mb-1">
+                    Linear Tools
+                </div>
+                  <div className="hidden md:block flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                    <img
+                      className="rounded-full"
+                      src={require("../images/portfolio/logos/lineartools.jpeg")}
+                      alt="Alien Raffles"
+                    />
+                  </div>
+                </a>
+                <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 5
+                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                      : "bg-gray-200 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(5);
+                  }}
+                >
+                <div className="text-center md:text-left flex-1 font-bold leading-snug tracking-tight mb-1">
+                    Sticky Gmails
+                </div>
+                  <div className="hidden md:block flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                    <img
+                      className="rounded-full"
+                      src={require("../images/portfolio/logos/stickgmails.jpeg")}
+                      alt="Alien Raffles"
+                    />
+                  </div>
+                </a>
+                </div>
               </div>
             </div>
             {/* <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
@@ -227,6 +275,64 @@ function Features() {
                     />
                     <a
                       href="https://elevateaio.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
+                    >
+                      Visit
+                    </a>
+                  </div>
+                </Transition>
+                <Transition
+                  show={tab === 4}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col">
+                    <img
+                      className="md:max-w-none mx-auto rounded"
+                      src={require("../images/portfolio/webshot/lineartools.png")}
+                      width="500"
+                      height="462"
+                      alt="Features bg"
+                    />
+                    <a
+                      href="https://linear.tools/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
+                    >
+                      Visit
+                    </a>
+                  </div>
+                </Transition>
+                <Transition
+                  show={tab === 5}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col">
+                    <img
+                      className="md:max-w-none mx-auto rounded"
+                      src={require("../images/portfolio/webshot/stickygmails.png")}
+                      width="500"
+                      height="462"
+                      alt="Features bg"
+                    />
+                    <a
+                      href="https://stickygmails.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"

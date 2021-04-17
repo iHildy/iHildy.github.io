@@ -48,7 +48,7 @@ function HeroHome() {
               data-aos="zoom-y-out"
             >
               Your vision,{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 relative z-40">
                 my execution
               </span>
             </h1>

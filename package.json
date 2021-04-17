@@ -1,25 +1,48 @@
 {
-  "name": "iHildy.github.io",
-  "version": "3.0.0",
-  "description": "Portfolio for Ian Hildebrand",
-  "main": "index.html",
-  "scripts": {
-    "build-css": "tailwindcss build tailwind.css -o ./public/css/tailwind.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iHildy/iHildy.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iHildy/iHildy.github.io/issues"
-  },
-  "homepage": "https://github.com/iHildy/iHildy.github.io#readme",
+  "name": "simple-light-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "autoprefixer": "^10.1.0",
-    "postcss": "^8.2.1",
-    "tailwindcss": "^2.0.2"
+    "@craco/craco": "^5.7.0",
+    "@headlessui/react": "^1.0.0",
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aos": "^3.0.0-beta.6",
+    "autoprefixer": "^9.8.6",
+    "cruip-js-toolkit": "^1.0.2",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
+    "tailwindcss": "^1.8.10"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build && prettier --write .",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

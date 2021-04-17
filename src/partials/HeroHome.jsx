@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import Modal from "../utils/Modal";
+import React from "react";
+// import Modal from "../utils/Modal";
 
 function HeroHome() {
-
   return (
     <section className="relative">
       {/* Illustration behind hero content */}

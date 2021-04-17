@@ -75,14 +75,14 @@ function HeroHome() {
                     Get in touch
                   </a>
                 </div>
-                <div>
+                {/* <div>
                   <a
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                     href="#portfolio"
                   >
                     Portfolio
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

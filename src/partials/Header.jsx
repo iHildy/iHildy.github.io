@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 function Header() {
   const [top, setTop] = useState(true);
@@ -37,7 +39,27 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
+            <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
+              <li>
+                <a href="https://github.com/ihildy">
+                  <FaGithub
+                    className="fill-current text-black hover:text-blue-500 transition duration-300"
+                    size="1.5em"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ianhildy">
+                  <FaTwitter
+                    className="fill-current text-black hover:text-blue-500 transition duration-300"
+                    size="1.5em"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                </a>
+              </li>
               <li>
                 <a
                   href="https://discord.gg/CeQatpWKKV"
@@ -47,7 +69,7 @@ function Header() {
                 >
                   <span>Contact</span>
                   <svg
-                    className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1 transition duration-300 transform ml-2 group-hover:translate-x-1"
+                    className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 -mr-1 transition duration-300 transform ml-2 group-hover:translate-x-1"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >

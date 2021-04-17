@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["public/index.html", "src/**/*.js", "src/**/*.jsx"],
   theme: {
@@ -25,6 +27,7 @@ module.exports = {
           800: "#0059C2",
           900: "#004391",
         },
+        teal: colors.teal,
       },
       boxShadow: {
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
@@ -156,5 +159,5 @@ module.exports = {
     boxShadow: ["responsive", "hover", "focus", "focus-within"],
     opacity: ["responsive", "hover", "focus", "group-hover"],
   },
-  plugins: [require("@tailwindcss/custom-forms")],
+  plugins: [require("@tailwindcss/forms")],
 };

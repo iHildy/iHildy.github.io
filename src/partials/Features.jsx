@@ -1,5 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition.jsx";
+import WebSelect from "./components/WebSelect";
+import SmallWebSelect from "./components/SmallWebSelect";
+import WebSelectImage from "./components/WebSelectImage";
+import logosAlienRaffles from "../images/portfolio/logos/alienRaffles.png";
+import logosVanished from "../images/portfolio/logos/vanished.jpeg";
+import logosElevate from "../images/portfolio/logos/elevate.jpeg";
+import logosLinearTools from "../images/portfolio/logos/lineartools.jpeg";
+import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
+import webshotAlien from "../images/portfolio/webshot/alien.png";
+import webshotVanished from "../images/portfolio/webshot/vanished.png";
+import webshotElevate from "../images/portfolio/webshot/elevate.png";
+import webshotLinearTools from "../images/portfolio/webshot/lineartools.png";
+import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -19,7 +32,7 @@ function Features() {
   }, [tab]);
 
   return (
-    <section className="relative" id='portfolio'>
+    <section className="relative" id="portfolio">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
@@ -60,21 +73,12 @@ function Features() {
                     setTab(1);
                   }}
                 >
-                  <div className="flex-1">
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Alien Raffles iOS
-                    </div>
-                    <div className="text-gray-600">
-                      The first iOS Based Raffle Bot.
-                    </div>
-                  </div>
-                  <div className="flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <img
-                      className="rounded-full"
-                      src={require("../images/portfolio/logos/alienRaffles.png")}
-                      alt="Alien Raffles"
-                    />
-                  </div>
+                  <WebSelect
+                    title="Alien Raffles iOS"
+                    description="The first iOS Based Raffle Bot."
+                    image={logosAlienRaffles}
+                    alt="Alien Raffles"
+                  />
                 </a>
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -88,21 +92,12 @@ function Features() {
                     setTab(2);
                   }}
                 >
-                  <div className="flex-1">
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      VanishedIO
-                    </div>
-                    <div className="text-gray-600">
-                      Never see a captcha again...
-                    </div>
-                  </div>
-                  <div className="flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <img
-                      className="rounded-full"
-                      src={require("../images/portfolio/logos/vanished.jpeg")}
-                      alt="Vanished"
-                    />
-                  </div>
+                  <WebSelect
+                    title="VanishedIO"
+                    description="Never see a captcha again..."
+                    image={logosVanished}
+                    alt="Vanished"
+                  />
                 </a>
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -116,69 +111,50 @@ function Features() {
                     setTab(3);
                   }}
                 >
-                  <div className="flex-1">
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Elevate AIO
-                    </div>
-                    <div className="text-gray-600">
-                      Botting Elevated, supporting a range of retail stores.
-                    </div>
-                  </div>
-                  <div className="flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <img
-                      className="rounded-full"
-                      src={require("../images/portfolio/logos/elevate.jpeg")}
-                      alt="Alien Raffles"
-                    />
-                  </div>
+                  <WebSelect
+                    title="Elevate AIO"
+                    description="Botting Elevated, supporting a range of retail stores."
+                    image={logosElevate}
+                    alt="Elevate AIO"
+                  />
                 </a>
-                <div className='grid grid-cols-2 gap-3'>
+                <div className="grid grid-cols-2 gap-3">
                   <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 4
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(4);
-                  }}
-                >
-                <div className="text-center md:text-left flex-1 font-bold leading-snug tracking-tight mb-1">
-                    Linear Tools
-                </div>
-                  <div className="hidden md:block flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <img
-                      className="rounded-full"
-                      src={require("../images/portfolio/logos/lineartools.jpeg")}
-                      alt="Alien Raffles"
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 4
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(4);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Linear Tools"
+                      image={logosLinearTools}
+                      alt="Linear Tools"
                     />
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 5
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(5);
-                  }}
-                >
-                <div className="text-center md:text-left flex-1 font-bold leading-snug tracking-tight mb-1">
-                    Sticky Gmails
-                </div>
-                  <div className="hidden md:block flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <img
-                      className="rounded-full"
-                      src={require("../images/portfolio/logos/stickgmails.jpeg")}
-                      alt="Alien Raffles"
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 5
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(5);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Sticky Gmails"
+                      image={logosStickyGmails}
+                      alt="Sticky Gmails"
                     />
-                  </div>
-                </a>
+                  </a>
                 </div>
               </div>
             </div>
@@ -205,23 +181,11 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={require("../images/portfolio/webshot/alien.png")}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <a
-                      href="https://alienios.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
-                    >
-                      Visit
-                    </a>
-                  </div>
+                  <WebSelectImage
+                    image={webshotAlien}
+                    alt="Alien Raffles Screenshot"
+                    link="https://alienios.netlify.app/"
+                  />
                 </Transition>
                 {/* Item 2 */}
                 <Transition
@@ -235,23 +199,11 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={require("../images/portfolio/webshot/vanished.png")}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <a
-                      href="https://vanishedio.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
-                    >
-                      Visit
-                    </a>
-                  </div>
+                  <WebSelectImage
+                    image={webshotVanished}
+                    alt="Vanished Screenshot"
+                    link="https://vanishedio.com/"
+                  />
                 </Transition>
                 {/* Item 3 */}
                 <Transition
@@ -265,23 +217,11 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={require("../images/portfolio/webshot/elevate.png")}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <a
-                      href="https://elevateaio.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
-                    >
-                      Visit
-                    </a>
-                  </div>
+                  <WebSelectImage
+                    image={webshotElevate}
+                    alt="Elevate Screenshot"
+                    link="https://elevateaio.com/"
+                  />
                 </Transition>
                 <Transition
                   show={tab === 4}
@@ -294,23 +234,11 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={require("../images/portfolio/webshot/lineartools.png")}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <a
-                      href="https://linear.tools/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
-                    >
-                      Visit
-                    </a>
-                  </div>
+                  <WebSelectImage
+                    image={webshotLinearTools}
+                    alt="Linear Tools Screenshot"
+                    link="https://linear.tools/"
+                  />
                 </Transition>
                 <Transition
                   show={tab === 5}
@@ -323,23 +251,11 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={require("../images/portfolio/webshot/stickygmails.png")}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <a
-                      href="https://stickygmails.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto mt-2"
-                    >
-                      Visit
-                    </a>
-                  </div>
+                  <WebSelectImage
+                    image={webshotStickyGmails}
+                    alt="Sticky Gmails Screenshot"
+                    link="https://stickygmails.com/"
+                  />
                 </Transition>
               </div>
             </div>

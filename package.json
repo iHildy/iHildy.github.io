@@ -4,28 +4,32 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.7.0",
-    "@headlessui/react": "^1.0.0",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "aos": "^3.0.0-beta.6",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^9",
     "cruip-js-toolkit": "^1.0.2",
     "node-sass": "^4.14.1",
+    "postcss": "^7",
     "postcss-cli": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1",
-    "tailwindcss": "^1.8.10"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && prettier --write .",
+    "build": "prettier --write . && craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": "react-app"

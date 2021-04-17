@@ -6,6 +6,7 @@ const WebSelectImage = ({ image, alt, link }) => {
       <img
         className="md:max-w-none mx-auto rounded"
         src={image}
+        draggable='false'
         width="500"
         height="462"
         alt={alt}

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Header() {
   const [top, setTop] = useState(true);
@@ -40,23 +42,48 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
-              <li>
-                <a href="https://github.com/ihildy">
-                  <FaGithub
+              <li className='hidden md:block'>
+                <a data-tip data-for="email" href="mailto:ian@jedi.net">
+                  <ReactTooltip place="bottom" id="email">
+                    <span>ian@jedi.net</span>
+                  </ReactTooltip>
+                  <MdEmail
                     className="fill-current text-black hover:text-blue-500 transition duration-300"
                     size="1.5em"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   />
                 </a>
               </li>
-              <li>
-                <a href="https://twitter.com/ianhildy">
+              <li className='hidden md:block'>
+                <a
+                  data-tip
+                  data-for="github"
+                  href="https://github.com/ihildy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ReactTooltip place="bottom" id="github">
+                    <span>iHildy</span>
+                  </ReactTooltip>
+                  <FaGithub
+                    className="fill-current text-black hover:text-blue-500 transition duration-300"
+                    size="1.5em"
+                  />
+                </a>
+              </li>
+              <li className='hidden md:block'>
+                <a
+                  data-tip
+                  data-for="twitter"
+                  href="https://twitter.com/ianhildy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ReactTooltip place="bottom" id="twitter">
+                    <span>@ianhildy</span>
+                  </ReactTooltip>
                   <FaTwitter
                     className="fill-current text-black hover:text-blue-500 transition duration-300"
                     size="1.5em"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   />
                 </a>
               </li>

@@ -86,6 +86,9 @@ function Features() {
                 </a>
               </div>
             </div>
+            {/* <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
+
+            </div> */}
 
             {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>

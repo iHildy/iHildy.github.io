@@ -1,25 +1,49 @@
 {
-  "name": "iHildy.github.io",
-  "version": "3.0.0",
-  "description": "Portfolio for Ian Hildebrand",
-  "main": "index.html",
-  "scripts": {
-    "build-css": "tailwindcss build tailwind.css -o ./public/css/tailwind.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iHildy/iHildy.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iHildy/iHildy.github.io/issues"
-  },
-  "homepage": "https://github.com/iHildy/iHildy.github.io#readme",
+  "name": "simple-light-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "autoprefixer": "^10.1.0",
-    "postcss": "^8.2.1",
-    "tailwindcss": "^2.0.2"
+    "@craco/craco": "^6.1.1",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "aos": "^3.0.0-beta.6",
+    "autoprefixer": "^9",
+    "cruip-js-toolkit": "^1.0.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^7",
+    "postcss-cli": "^8.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-tooltip": "^4.2.17",
+    "react-transition-group": "^4.4.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "prettier --write . && craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "format": "prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

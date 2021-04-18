@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
+import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -42,6 +43,17 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
+              <li className="hidden md:block">
+                <a data-tip data-for="discord" href="https://discord.gg/CeQatpWKKV">
+                  <ReactTooltip place="bottom" id="discord">
+                    <span>iHildy#3839</span>
+                  </ReactTooltip>
+                  <FaDiscord
+                    className="fill-current text-black hover:text-blue-500 transition duration-300"
+                    size="1.5em"
+                  />
+                </a>
+              </li>
               <li className="hidden md:block">
                 <a data-tip data-for="email" href="mailto:ian@jedi.net">
                   <ReactTooltip place="bottom" id="email">

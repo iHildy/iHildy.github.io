@@ -68,11 +68,23 @@ function HeroHome() {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+                    id='git'
                     href="https://discord.gg/CeQatpWKKV"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Get in touch
+                    <div>
+                        <span>G</span>
+                        <span>e</span>
+                        <span>t&nbsp;</span>
+                        <span>i</span>
+                        <span>n&nbsp;</span>
+                        <span>t</span>
+                        <span>o</span>
+                        <span>u</span>
+                        <span>c</span>
+                        <span>h</span>
+                    </div>
                   </a>
                 </div>
                 {/* <div>

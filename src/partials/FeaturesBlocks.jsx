@@ -14,12 +14,12 @@ function FeaturesBlocks() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Portfolio</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="h2 mb-4">How It Works</h2>
+            {/* <p className="text-xl text-gray-600">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
               cupidatat.
-            </p>
+            </p> */}
           </div>
 
           {/* Items */}

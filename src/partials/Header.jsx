@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+
+import logo from '../images/favicon.png'
+
 import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
 import { FaDiscord } from "react-icons/fa";
@@ -32,7 +35,7 @@ function Header() {
             <Link to="/" className="block" aria-label="Cruip">
               <img
                 className="h-16"
-                src={require("../images/favicon.png")}
+                src={logo}
                 alt="Logo"
                 draggable="false"
               />

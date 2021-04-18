@@ -43,12 +43,12 @@ function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4">
-              Trusted by over 20,000 companies all over the world
+              Trusted by the best
             </h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">
+            {/* <p className="text-xl text-gray-600" data-aos="zoom-y-out">
               Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar
               mattis blandit libero cursus mattis.
-            </p>
+            </p> */}
           </div>
 
           {/* Items */}

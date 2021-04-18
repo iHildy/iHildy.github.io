@@ -42,7 +42,7 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
-              <li className='hidden md:block'>
+              <li className="hidden md:block">
                 <a data-tip data-for="email" href="mailto:ian@jedi.net">
                   <ReactTooltip place="bottom" id="email">
                     <span>ian@jedi.net</span>
@@ -53,7 +53,7 @@ function Header() {
                   />
                 </a>
               </li>
-              <li className='hidden md:block'>
+              <li className="hidden md:block">
                 <a
                   data-tip
                   data-for="github"
@@ -70,7 +70,7 @@ function Header() {
                   />
                 </a>
               </li>
-              <li className='hidden md:block'>
+              <li className="hidden md:block">
                 <a
                   data-tip
                   data-for="twitter"

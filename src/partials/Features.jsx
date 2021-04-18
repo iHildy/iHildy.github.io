@@ -3,16 +3,22 @@ import Transition from "../utils/Transition.jsx";
 import WebSelect from "./components/WebSelect";
 import SmallWebSelect from "./components/SmallWebSelect";
 import WebSelectImage from "./components/WebSelectImage";
+
 import logosAlienRaffles from "../images/portfolio/logos/alienRaffles.png";
 import logosVanished from "../images/portfolio/logos/vanished.jpeg";
 import logosElevate from "../images/portfolio/logos/elevate.jpeg";
 import logosLinearTools from "../images/portfolio/logos/lineartools.jpeg";
 import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
+import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
+import logosUnknown from "../images/portfolio/logos/unknown.jpeg";
+
 import webshotAlien from "../images/portfolio/webshot/alien.png";
 import webshotVanished from "../images/portfolio/webshot/vanished.png";
 import webshotElevate from "../images/portfolio/webshot/elevate.png";
 import webshotLinearTools from "../images/portfolio/webshot/lineartools.png";
 import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
+import webshot300Chefs from "../images/portfolio/webshot/300chefs.png";
+import webshotUnknown from "../images/portfolio/webshot/unknownaio.png";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -73,7 +79,6 @@ function Features() {
                     setTab(1);
                   }}
                 >
-                    
                   <WebSelect
                     title="Alien Raffles iOS"
                     description="The first iOS Based Raffle Bot."
@@ -154,6 +159,42 @@ function Features() {
                       title="Sticky Gmails"
                       image={logosStickyGmails}
                       alt="Sticky Gmails"
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 6
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(6);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="300 Chefs"
+                      image={logos300Chefs}
+                      alt="300 Chefs"
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 7
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(7);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="UnknownAIO"
+                      image={logosUnknown}
+                      alt="UnknownAIO"
                     />
                   </a>
                 </div>
@@ -256,6 +297,40 @@ function Features() {
                     image={webshotStickyGmails}
                     alt="Sticky Gmails Screenshot"
                     link="https://stickygmails.com/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 6}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshot300Chefs}
+                    alt="300 Chefs Screenshot"
+                    link="https://300chefs.com/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 7}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotUnknown}
+                    alt="UnknownAIO Screenshot"
+                    link="https://unknownaio.com/"
                   />
                 </Transition>
               </div>

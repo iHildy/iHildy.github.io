@@ -10,7 +10,7 @@ const WebSelect = ({ title, description, image, alt }) => {
         <div className="text-gray-600">{description}</div>
       </div>
       <div className="flex justify-center items-center w-10 bg-white rounded-full shadow flex-shrink-0 ml-3">
-        <img className="rounded-full" src={image} draggable='false' alt={alt} />
+        <img className="rounded-full" src={image} draggable="false" alt={alt} />
       </div>
     </>
   );

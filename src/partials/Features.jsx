@@ -1,24 +1,29 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition.jsx";
-import WebSelect from "./components/WebSelect";
 import SmallWebSelect from "./components/SmallWebSelect";
 import WebSelectImage from "./components/WebSelectImage";
 
 import logosAlienRaffles from "../images/portfolio/logos/alienRaffles.png";
+import logosNyte from "../images/portfolio/logos/nyte.jpeg";
+import logosThrone from "../images/portfolio/logos/throne.jpeg";
+import logosDaniel from "../images/portfolio/logos/danielServices.svg";
 import logosVanished from "../images/portfolio/logos/vanished.jpeg";
 import logosElevate from "../images/portfolio/logos/elevate.jpeg";
 import logosLinearTools from "../images/portfolio/logos/lineartools.jpeg";
 import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
 import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
-import logosUnknown from "../images/portfolio/logos/unknown.jpeg";
+import logosGoodChefs from "../images/portfolio/logos/goodchefs.jpeg";
 
 import webshotAlien from "../images/portfolio/webshot/alien.png";
+import webshotNyte from "../images/portfolio/webshot/nyte.png";
+import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
+import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
 import webshotVanished from "../images/portfolio/webshot/vanished.png";
 import webshotElevate from "../images/portfolio/webshot/elevate.png";
 import webshotLinearTools from "../images/portfolio/webshot/lineartools.png";
 import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
 import webshot300Chefs from "../images/portfolio/webshot/300chefs.png";
-import webshotUnknown from "../images/portfolio/webshot/unknownaio.png";
+import webshotGoodChefs from "../images/portfolio/webshot/goodchefs.jpg";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -41,7 +46,7 @@ function Features() {
     <section className="relative" id="portfolio">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
-        className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
+        className="absolute inset-0 bg-gray-100 h-full pointer-events-none pb-16"
         aria-hidden="true"
       ></div>
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
@@ -67,68 +72,59 @@ function Features() {
               </div> */}
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 1
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(1);
-                  }}
-                >
-                  <WebSelect
-                    title="Alien Raffles iOS"
-                    description="The first iOS Based Raffle Bot."
-                    image={logosAlienRaffles}
-                    alt="Alien Raffles"
-                  />
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 2
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(2);
-                  }}
-                >
-                  <WebSelect
-                    title="VanishedIO"
-                    description="Never see a captcha again..."
-                    image={logosVanished}
-                    alt="Vanished"
-                  />
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 3
-                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
-                      : "bg-gray-200 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(3);
-                  }}
-                >
-                  <WebSelect
-                    title="Elevate AIO"
-                    description="Botting Elevated, supporting a range of retail stores."
-                    image={logosElevate}
-                    alt="Elevate AIO"
-                  />
-                </a>
                 <div className="grid grid-cols-2 gap-3">
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 1
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(1);
+                    }}
+                  >
+                    <SmallWebSelect title="Nyte AIO" image={logosNyte} />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 2
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(2);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Daniel Services"
+                      image={logosDaniel}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 3
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(3);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Throne Proxies"
+                      image={logosThrone}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 4
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
                     }`}
                     href="#0"
@@ -138,15 +134,14 @@ function Features() {
                     }}
                   >
                     <SmallWebSelect
-                      title="Linear Tools"
-                      image={logosLinearTools}
-                      alt="Linear Tools"
+                      title="Vanished Gmails"
+                      image={logosVanished}
                     />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 5
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
                     }`}
                     href="#0"
@@ -155,16 +150,12 @@ function Features() {
                       setTab(5);
                     }}
                   >
-                    <SmallWebSelect
-                      title="Sticky Gmails"
-                      image={logosStickyGmails}
-                      alt="Sticky Gmails"
-                    />
+                    <SmallWebSelect title="Elevate AIO" image={logosElevate} />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 6
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
                     }`}
                     href="#0"
@@ -174,15 +165,14 @@ function Features() {
                     }}
                   >
                     <SmallWebSelect
-                      title="300 Chefs"
-                      image={logos300Chefs}
-                      alt="300 Chefs"
+                      title="Linear Tools"
+                      image={logosLinearTools}
                     />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 7
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
                     }`}
                     href="#0"
@@ -192,9 +182,59 @@ function Features() {
                     }}
                   >
                     <SmallWebSelect
-                      title="UnknownAIO"
-                      image={logosUnknown}
-                      alt="UnknownAIO"
+                      title="Alien Raffles AIO"
+                      image={logosAlienRaffles}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 8
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(8);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Sticky Gmails"
+                      image={logosStickyGmails}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 9
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(9);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="300 Chefs Group"
+                      image={logos300Chefs}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 10
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(10);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="The Good Chefs Group"
+                      image={logosGoodChefs}
                     />
                   </a>
                 </div>
@@ -224,9 +264,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotAlien}
-                    alt="Alien Raffles Screenshot"
-                    link="https://alienios.netlify.app/"
+                    image={webshotNyte}
+                    alt="Nyte Screenshot"
+                    link="https://nyte.linear.tools/"
                   />
                 </Transition>
                 {/* Item 2 */}
@@ -242,9 +282,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotVanished}
-                    alt="Vanished Screenshot"
-                    link="https://vanishedio.com/"
+                    image={webshotDaniel}
+                    alt="Daniel Services Screenshot"
+                    link="https://www.daniel-services.com/"
                   />
                 </Transition>
                 {/* Item 3 */}
@@ -260,13 +300,47 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotElevate}
-                    alt="Elevate Screenshot"
-                    link="https://elevateaio.com/"
+                    image={webshotThrone}
+                    alt="Throne Screenshot"
+                    link="https://throneproxies.com/"
                   />
                 </Transition>
                 <Transition
                   show={tab === 4}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotVanished}
+                    alt="Vanished Screenshot"
+                    link="https://vanishedio.com/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 5}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotElevate}
+                    alt="Elevate Screenshot"
+                    link="https://elevate.linear.tools/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 6}
                   appear={true}
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
@@ -283,7 +357,24 @@ function Features() {
                   />
                 </Transition>
                 <Transition
-                  show={tab === 5}
+                  show={tab === 7}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotAlien}
+                    alt="Alien Raffles Screenshot"
+                    link="https://alienios.netlify.app/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 8}
                   appear={true}
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
@@ -300,7 +391,7 @@ function Features() {
                   />
                 </Transition>
                 <Transition
-                  show={tab === 6}
+                  show={tab === 9}
                   appear={true}
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
@@ -317,7 +408,7 @@ function Features() {
                   />
                 </Transition>
                 <Transition
-                  show={tab === 7}
+                  show={tab === 10}
                   appear={true}
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
@@ -328,9 +419,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotUnknown}
-                    alt="UnknownAIO Screenshot"
-                    link="https://unknownaio.com/"
+                    image={webshotGoodChefs}
+                    alt="Good Chefs Screenshot"
+                    link="https://www.goodchefs.io/"
                   />
                 </Transition>
               </div>

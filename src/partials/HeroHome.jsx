@@ -43,15 +43,15 @@ function HeroHome() {
             {/* <div class="inline-flex bg-gray-900 text-white py-3 px-5 z-10 items-center btn">
                   <div class="">Open for hire</div>
               </div> */}
-            <h1
-              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
+            <div
+              className="text-4xl sm:text-6xl text-center font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Your vision,{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+              Your vision,{" "}<br></br>
+              <span className="text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 relative z-50">
                 my execution
               </span>
-            </h1>
+            </div>
             <div className="max-w-3xl mx-auto">
               <p
                 className="text-xl text-gray-600 mb-8"

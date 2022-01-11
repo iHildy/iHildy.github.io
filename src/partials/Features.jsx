@@ -12,7 +12,7 @@ import logosElevate from "../images/portfolio/logos/elevate.jpeg";
 import logosLinearTools from "../images/portfolio/logos/lineartools.jpeg";
 import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
 import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
-import logosGoodChefs from "../images/portfolio/logos/goodchefs.jpeg";
+import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
 import webshotAlien from "../images/portfolio/webshot/alien.png";
 import webshotNyte from "../images/portfolio/webshot/nyte.png";
@@ -23,7 +23,7 @@ import webshotElevate from "../images/portfolio/webshot/elevate.png";
 import webshotLinearTools from "../images/portfolio/webshot/lineartools.png";
 import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
 import webshot300Chefs from "../images/portfolio/webshot/300chefs.png";
-import webshotGoodChefs from "../images/portfolio/webshot/goodchefs.jpg";
+import webshotWiseBricks from "../images/portfolio/webshot/wisebricks.png";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -102,6 +102,23 @@ function Features() {
                     <SmallWebSelect
                       title="Daniel Services"
                       image={logosDaniel}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 10
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(10);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Wise Bricks"
+                      image={logosWiseBricks}
                     />
                   </a>
                   <a
@@ -218,23 +235,6 @@ function Features() {
                     <SmallWebSelect
                       title="300 Chefs Group"
                       image={logos300Chefs}
-                    />
-                  </a>
-                  <a
-                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                      tab !== 10
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
-                        : "bg-gray-200 border-transparent"
-                    }`}
-                    href="#0"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTab(10);
-                    }}
-                  >
-                    <SmallWebSelect
-                      title="The Good Chefs Group"
-                      image={logosGoodChefs}
                     />
                   </a>
                 </div>
@@ -419,9 +419,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotGoodChefs}
-                    alt="Good Chefs Screenshot"
-                    link="https://www.goodchefs.io/"
+                    image={webshotWiseBricks}
+                    alt="Wise Bricks Screenshot"
+                    link="https://www.wisegroup.io/"
                   />
                 </Transition>
               </div>

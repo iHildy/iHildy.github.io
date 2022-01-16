@@ -81,55 +81,55 @@
 }
 
 #git {
-    cursor: pointer;
-    border: none;
-    // font-family: 'Circular Std Medium', sans-serif;
-    // background-color: #2563EB;
-    // font-size: 1.2rem;
-    --move-hover: -4px;
-    --shadow: 0 2px 8px -1px #{rgba(#2563EB, .32)};
-    --shadow-hover: 0 4px 20px -2px #{rgba(#2563EB, .5)};
-    // margin-top: 5%;
-    // padding: 16px 32px;
-    // line-height: 1.2rem;
-    // border-radius: 24px;
-    outline: none;
-    color: #fff;
-    box-shadow: var(--shadow);
-    transform: translateY(var(--y));
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    div {
-      display: flex;
-      overflow: hidden;
-      text-shadow: 0 1.2rem 0 #fff;
-      span {
-        display: block;
-        backface-visibility: hidden;
-        font-style: normal;
-        transition: transform 0.3s ease;
-        transform: translateY(var(--m));
-        $i: 1;
-        @while $i < 12 {
-          &:nth-child(#{$i}) {
-            transition-delay: $i / 20 + s;
-          }
-          $i: $i + 1;
+  cursor: pointer;
+  border: none;
+  // font-family: 'Circular Std Medium', sans-serif;
+  // background-color: #2563EB;
+  // font-size: 1.2rem;
+  --move-hover: -4px;
+  --shadow: 0 2px 8px -1px #{rgba(#2563eb, 0.32)};
+  --shadow-hover: 0 4px 20px -2px #{rgba(#2563eb, 0.5)};
+  // margin-top: 5%;
+  // padding: 16px 32px;
+  // line-height: 1.2rem;
+  // border-radius: 24px;
+  outline: none;
+  color: #fff;
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 1.2rem 0 #fff;
+    span {
+      display: block;
+      backface-visibility: hidden;
+      font-style: normal;
+      transition: transform 0.3s ease;
+      transform: translateY(var(--m));
+      $i: 1;
+      @while $i < 12 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i / 20 + s;
         }
+        $i: $i + 1;
       }
     }
+  }
+  &:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+    span {
+      --m: calc(1.2rem * -1);
+    }
+  }
+  &.reverse {
+    --font-shadow: calc(1.2rem * -1);
     &:hover {
-      --y: var(--move-hover);
-      --shadow: var(--shadow-hover);
       span {
-        --m: calc(1.2rem * -1);
+        --m: calc(1.2rem);
       }
     }
-    &.reverse {
-      --font-shadow: calc(1.2rem * -1);
-      &:hover {
-        span {
-          --m: calc(1.2rem);
-        }
-      }
-    }
+  }
 }

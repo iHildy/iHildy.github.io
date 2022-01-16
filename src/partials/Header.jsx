@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import logo from '../images/favicon.png'
+import logo from "../images/favicon.png";
 
 import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
@@ -33,12 +33,7 @@ function Header() {
           <div className="flex items-center mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img
-                className="h-16"
-                src={logo}
-                alt="Logo"
-                draggable="false"
-              />
+              <img className="h-16" src={logo} alt="Logo" draggable="false" />
             </Link>
             <h1 className="text-2xl font-extrabold">iHildy</h1>
           </div>
@@ -47,7 +42,11 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center space-x-4">
               <li className="hidden md:block">
-                <a data-tip data-for="discord" href="https://discord.gg/CeQatpWKKV">
+                <a
+                  data-tip
+                  data-for="discord"
+                  href="https://discord.gg/CeQatpWKKV"
+                >
                   <ReactTooltip place="bottom" id="discord">
                     <span>iHildy#3839</span>
                   </ReactTooltip>

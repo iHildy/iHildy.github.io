@@ -4,7 +4,7 @@ import SmallWebSelect from "./components/SmallWebSelect";
 import WebSelectImage from "./components/WebSelectImage";
 
 import logosAlienRaffles from "../images/portfolio/logos/alienRaffles.png";
-import logosNyte from "../images/portfolio/logos/nyte.jpeg";
+import logosSolarTrades from "../images/portfolio/logos/solarTrades.png";
 import logosThrone from "../images/portfolio/logos/throne.jpeg";
 import logosDaniel from "../images/portfolio/logos/danielServices.svg";
 import logosVanished from "../images/portfolio/logos/vanished.jpeg";
@@ -15,7 +15,7 @@ import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
 import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
 import webshotAlien from "../images/portfolio/webshot/alien.png";
-import webshotNyte from "../images/portfolio/webshot/nyte.png";
+import webshotSolarTrades from "../images/portfolio/webshot/solarTrades.jpeg";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
 import webshotVanished from "../images/portfolio/webshot/vanished.png";
@@ -43,7 +43,7 @@ function Features() {
   }, [tab]);
 
   return (
-    <section className="relative" id="portfolio">
+    <section className="relative mb-20" id="portfolio">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 bg-gray-100 h-full pointer-events-none pb-16"
@@ -85,7 +85,10 @@ function Features() {
                       setTab(1);
                     }}
                   >
-                    <SmallWebSelect title="Nyte AIO" image={logosNyte} />
+                    <SmallWebSelect
+                      title="Wise Bricks"
+                      image={logosWiseBricks}
+                    />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -102,23 +105,6 @@ function Features() {
                     <SmallWebSelect
                       title="Daniel Services"
                       image={logosDaniel}
-                    />
-                  </a>
-                  <a
-                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                      tab !== 10
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
-                        : "bg-gray-200 border-transparent"
-                    }`}
-                    href="#0"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTab(10);
-                    }}
-                  >
-                    <SmallWebSelect
-                      title="Wise Bricks"
-                      image={logosWiseBricks}
                     />
                   </a>
                   <a
@@ -237,6 +223,23 @@ function Features() {
                       image={logos300Chefs}
                     />
                   </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 10
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(10);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Solar Trades"
+                      image={logosSolarTrades}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -251,7 +254,6 @@ function Features() {
               ref={tabs}
             >
               <div className="relative flex flex-col text-center lg:text-right">
-                {/* Item 1 */}
                 <Transition
                   show={tab === 1}
                   appear={true}
@@ -264,12 +266,11 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotNyte}
-                    alt="Nyte Screenshot"
-                    link="https://nyte.linear.tools/"
+                    image={webshotWiseBricks}
+                    alt="Wise Bricks Screenshot"
+                    link="https://www.wisegroup.io/"
                   />
                 </Transition>
-                {/* Item 2 */}
                 <Transition
                   show={tab === 2}
                   appear={true}
@@ -287,7 +288,6 @@ function Features() {
                     link="https://www.daniel-services.com/"
                   />
                 </Transition>
-                {/* Item 3 */}
                 <Transition
                   show={tab === 3}
                   appear={true}
@@ -419,9 +419,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotWiseBricks}
-                    alt="Wise Bricks Screenshot"
-                    link="https://www.wisegroup.io/"
+                    image={webshotSolarTrades}
+                    alt="Solar Trades Screenshot"
+                    link="https://www.solartrades.io/"
                   />
                 </Transition>
               </div>

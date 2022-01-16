@@ -47,18 +47,33 @@ function HeroHome() {
               className="text-4xl sm:text-6xl text-center font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Your vision,{" "}<br></br>
+              Your vision, <br></br>
               <span className="text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 relative z-50">
                 my execution
               </span>
             </div>
             <div className="max-w-3xl mx-auto">
               <p
-                className="text-xl text-gray-600 mb-8"
+                className="text-xl text-gray-600 mb-2"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
                 Frontend Web Developer focusing on the reselling community.
+              </p>
+              <p
+                className="text-xl text-gray-600 mb-8"
+                data-aos="zoom-y-out"
+                data-aos-delay="150"
+              >
+                Founder of{" "}
+                <a
+                  href="http://lineardesigns.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 font-bold hover:text-teal-500 transition duration-300 ease-in-out border-b-2 hover:border-teal-500"
+                >
+                  Linear
+                </a>
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -68,22 +83,22 @@ function HeroHome() {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    id='git'
+                    id="git"
                     href="https://discord.gg/CeQatpWKKV"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div>
-                        <span>G</span>
-                        <span>e</span>
-                        <span>t&nbsp;</span>
-                        <span>i</span>
-                        <span>n&nbsp;</span>
-                        <span>t</span>
-                        <span>o</span>
-                        <span>u</span>
-                        <span>c</span>
-                        <span>h</span>
+                      <span>G</span>
+                      <span>e</span>
+                      <span>t&nbsp;</span>
+                      <span>i</span>
+                      <span>n&nbsp;</span>
+                      <span>t</span>
+                      <span>o</span>
+                      <span>u</span>
+                      <span>c</span>
+                      <span>h</span>
                     </div>
                   </a>
                 </div>

@@ -67,7 +67,7 @@ function HeroHome() {
               >
                 Founder of{" "}
                 <a
-                  href="http://lineardesigns.io/"
+                  href="http://linear.tools/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 font-bold hover:text-teal-500 transition duration-300 ease-in-out border-b-2 hover:border-teal-500"

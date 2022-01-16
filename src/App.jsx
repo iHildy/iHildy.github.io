@@ -7,6 +7,7 @@ import AOS from "aos";
 import { focusHandling } from "cruip-js-toolkit";
 
 import Home from "./pages/Home";
+import Tips from "./pages/Tips";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/tips">
+          <Tips />
         </Route>
       </Switch>
     </>

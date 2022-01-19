@@ -2,6 +2,18 @@
   "github": {
     "silent": true
   },
+  "redirects": [
+    { 
+      "source": "/tips",
+      "destination": "https://tips.hildy.dev/", 
+      "permanent": true
+    },
+    { 
+      "source": "/tip",
+      "destination": "https://tips.hildy.dev/", 
+      "permanent": true
+    }
+  ],
 
   "cleanUrls": true
 }

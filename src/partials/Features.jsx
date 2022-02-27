@@ -14,7 +14,7 @@ import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
 import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
 import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
-import webshotLoop from "../images/portfolio/webshot/loopnft.jpeg";
+import webshotLoop from "../images/portfolio/webshot/loopnft.png";
 import webshotIntegrity from "../images/portfolio/webshot/integrity.jpeg";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
@@ -64,7 +64,7 @@ function Features() {
             {/* Content */}
             <div
               className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
-              data-aos="fade-right"
+              data-aos="fade-right"    
             >
               {/* <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>

@@ -10,7 +10,7 @@ function Tips() {
 
       {/*  Page content */}
       <main className="flex-grow">
-        {/*  Page sections */}hi
+        {/*  Page sections */}
         <HeroTips />
       </main>
     </div>

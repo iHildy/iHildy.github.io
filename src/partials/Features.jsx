@@ -15,7 +15,7 @@ import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
 import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
 import webshotLoop from "../images/portfolio/webshot/loopnft.png";
-import webshotIntegrity from "../images/portfolio/webshot/integrity.jpeg";
+import webshotIntegrity from "../images/portfolio/webshot/integrity.png";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
 import webshotVanished from "../images/portfolio/webshot/vanished.png";

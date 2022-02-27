@@ -3,24 +3,24 @@ import Transition from "../utils/Transition.jsx";
 import SmallWebSelect from "./components/SmallWebSelect";
 import WebSelectImage from "./components/WebSelectImage";
 
-import logosAlienRaffles from "../images/portfolio/logos/alienRaffles.png";
-import logosSolarTrades from "../images/portfolio/logos/solarTrades.png";
+import logosLoopNft from "../images/portfolio/logos/loopnft.png";
+import logoIntegrity from "../images/portfolio/logos/integrity.jpeg";
 import logosThrone from "../images/portfolio/logos/throne.jpeg";
 import logosDaniel from "../images/portfolio/logos/danielServices.svg";
 import logosVanished from "../images/portfolio/logos/vanished.jpeg";
 import logosElevate from "../images/portfolio/logos/elevate.jpeg";
-import logosLinearTools from "../images/portfolio/logos/lineartools.jpeg";
+import logosLinearTools from "../images/portfolio/logos/lineartools.png";
 import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
 import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
 import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
-import webshotAlien from "../images/portfolio/webshot/alien.png";
-import webshotSolarTrades from "../images/portfolio/webshot/solarTrades.jpeg";
+import webshotLoop from "../images/portfolio/webshot/loopnft.jpeg";
+import webshotIntegrity from "../images/portfolio/webshot/integrity.jpeg";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
 import webshotVanished from "../images/portfolio/webshot/vanished.png";
 import webshotElevate from "../images/portfolio/webshot/elevate.png";
-import webshotLinearTools from "../images/portfolio/webshot/lineartools.png";
+import webshotLinearTools from "../images/portfolio/webshot/lineartools.jpeg";
 import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
 import webshot300Chefs from "../images/portfolio/webshot/300chefs.png";
 import webshotWiseBricks from "../images/portfolio/webshot/wisebricks.png";
@@ -109,6 +109,40 @@ function Features() {
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 7
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(7);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Loop NFT"
+                      image={logosLoopNft}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== 10
+                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
+                        : "bg-gray-200 border-transparent"
+                    }`}
+                    href="#0"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setTab(10);
+                    }}
+                  >
+                    <SmallWebSelect
+                      title="Integrity"
+                      image={logoIntegrity}
+                    />
+                  </a>
+                  <a
+                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 3
                         ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
@@ -174,23 +208,6 @@ function Features() {
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                      tab !== 7
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
-                        : "bg-gray-200 border-transparent"
-                    }`}
-                    href="#0"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTab(7);
-                    }}
-                  >
-                    <SmallWebSelect
-                      title="Alien Raffles AIO"
-                      image={logosAlienRaffles}
-                    />
-                  </a>
-                  <a
-                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                       tab !== 8
                         ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
                         : "bg-gray-200 border-transparent"
@@ -221,23 +238,6 @@ function Features() {
                     <SmallWebSelect
                       title="300 Chefs Group"
                       image={logos300Chefs}
-                    />
-                  </a>
-                  <a
-                    className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                      tab !== 10
-                        ? "bg-white shadow-md border-gray-200 hover:shadow-2xl"
-                        : "bg-gray-200 border-transparent"
-                    }`}
-                    href="#0"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setTab(10);
-                    }}
-                  >
-                    <SmallWebSelect
-                      title="Solar Trades"
-                      image={logosSolarTrades}
                     />
                   </a>
                 </div>
@@ -286,6 +286,40 @@ function Features() {
                     image={webshotDaniel}
                     alt="Daniel Services Screenshot"
                     link="https://www.daniel-services.com/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 7}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotLoop}
+                    alt="Loop NFT Screenshot"
+                    link="https://www.theloopnodes.com/"
+                  />
+                </Transition>
+                <Transition
+                  show={tab === 10}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <WebSelectImage
+                    image={webshotIntegrity}
+                    alt="Integrity Screenshot"
+                    link="https://integrity.linear.tools/"
                   />
                 </Transition>
                 <Transition
@@ -357,23 +391,6 @@ function Features() {
                   />
                 </Transition>
                 <Transition
-                  show={tab === 7}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <WebSelectImage
-                    image={webshotAlien}
-                    alt="Alien Raffles Screenshot"
-                    link="https://alienios.netlify.app/"
-                  />
-                </Transition>
-                <Transition
                   show={tab === 8}
                   appear={true}
                   className="w-full"
@@ -405,23 +422,6 @@ function Features() {
                     image={webshot300Chefs}
                     alt="300 Chefs Screenshot"
                     link="https://300chefs.com/"
-                  />
-                </Transition>
-                <Transition
-                  show={tab === 10}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <WebSelectImage
-                    image={webshotSolarTrades}
-                    alt="Solar Trades Screenshot"
-                    link="https://www.solartrades.io/"
                   />
                 </Transition>
               </div>

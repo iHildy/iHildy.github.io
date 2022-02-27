@@ -22,7 +22,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "scripts": {
-    "start": "craco start",
+    "dev": "craco start",
     "build": "prettier --write . && craco build",
     "test": "craco test",
     "eject": "craco eject",

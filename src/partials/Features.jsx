@@ -302,7 +302,7 @@ function Features() {
                   <WebSelectImage
                     image={webshotLoop}
                     alt="Loop NFT Screenshot"
-                    link="https://www.theloopnodes.com/"
+                    link="https://loopnft.linear.tools/"
                   />
                 </Transition>
                 <Transition

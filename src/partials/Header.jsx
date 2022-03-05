@@ -45,7 +45,7 @@ function Header() {
                 <a
                   data-tip
                   data-for="discord"
-                  href="https://discord.gg/CeQatpWKKV"
+                  href="https://discord.gg/7PepvThQ9p"
                 >
                   <ReactTooltip place="bottom" id="discord">
                     <span>iHildy#3839</span>
@@ -103,7 +103,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/CeQatpWKKV"
+                  href="https://discord.gg/7PepvThQ9p"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 group"

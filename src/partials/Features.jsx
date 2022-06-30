@@ -7,7 +7,7 @@ import logosLoopNft from "../images/portfolio/logos/loopnft.png";
 import logoIntegrity from "../images/portfolio/logos/integrity.jpeg";
 import logosThrone from "../images/portfolio/logos/throne.jpeg";
 import logosDaniel from "../images/portfolio/logos/danielServices.svg";
-import logosVanished from "../images/portfolio/logos/vanished.jpeg";
+import logosOmniKit from "../images/portfolio/logos/omnikit.png";
 import logosElevate from "../images/portfolio/logos/elevate.jpeg";
 import logosLinearTools from "../images/portfolio/logos/lineartools.png";
 import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
@@ -18,7 +18,7 @@ import webshotLoop from "../images/portfolio/webshot/loopnft.png";
 import webshotIntegrity from "../images/portfolio/webshot/integrity.png";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
-import webshotVanished from "../images/portfolio/webshot/vanished.png";
+import webshotOmniKit from "../images/portfolio/webshot/omnikit.jpeg";
 import webshotElevate from "../images/portfolio/webshot/elevate.png";
 import webshotLinearTools from "../images/portfolio/webshot/lineartools.jpeg";
 import webshotStickyGmails from "../images/portfolio/webshot/stickygmails.png";
@@ -171,8 +171,8 @@ function Features() {
                     }}
                   >
                     <SmallWebSelect
-                      title="Vanished Gmails"
-                      image={logosVanished}
+                      title="OmniKit"
+                      image={logosOmniKit}
                     />
                   </a>
                   <a
@@ -351,9 +351,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotVanished}
-                    alt="Vanished Screenshot"
-                    link="https://vanishedio.com/"
+                    image={webshotOmniKit}
+                    alt="OmniKit Screenshot"
+                    link="https://omnikit.io/"
                   />
                 </Transition>
                 <Transition

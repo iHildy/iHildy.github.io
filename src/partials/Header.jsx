@@ -48,7 +48,7 @@ function Header() {
                   href="https://discord.gg/7PepvThQ9p"
                 >
                   <ReactTooltip place="bottom" id="discord">
-                    <span>iHildy#3839</span>
+                    <span>iHildy#4375</span>
                   </ReactTooltip>
                   <FaDiscord
                     className="fill-current text-black hover:text-blue-500 transition duration-300"

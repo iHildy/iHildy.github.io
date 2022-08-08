@@ -8,6 +8,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { AiFillLinkedin } from "react-icons/ai";
 
 function Header() {
   const [top, setTop] = useState(true);
@@ -62,6 +63,23 @@ function Header() {
                     <span>ian@jedi.net</span>
                   </ReactTooltip>
                   <MdEmail
+                    className="fill-current text-black hover:text-blue-500 transition duration-300"
+                    size="1.5em"
+                  />
+                </a>
+              </li>
+              <li className="hidden md:block">
+                <a
+                  data-tip
+                  data-for="linkedin"
+                  href="https://www.linkedin.com/in/ian-hildebrand/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ReactTooltip place="bottom" id="linkedin">
+                    <span>Ian Hildebrand</span>
+                  </ReactTooltip>
+                  <AiFillLinkedin
                     className="fill-current text-black hover:text-blue-500 transition duration-300"
                     size="1.5em"
                   />

@@ -14,7 +14,7 @@
       "permanent": true
     },
     { 
-      "source": "/resume.pdf",
+      "source": "/resume",
       "destination": "https://hildy.dev/resume.pdf/", 
       "permanent": true
     }

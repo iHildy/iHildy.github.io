@@ -12,9 +12,14 @@
       "source": "/tip",
       "destination": "https://tips.hildy.dev/", 
       "permanent": true
+    },
+    { 
+      "source": "/resume.pdf",
+      "destination": "https://hildy.dev/resume.pdf/", 
+      "permanent": true
     }
   ],
 
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": true
 }

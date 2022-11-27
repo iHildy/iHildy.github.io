@@ -3,7 +3,7 @@ import Transition from "../utils/Transition.jsx";
 import SmallWebSelect from "./components/SmallWebSelect";
 import WebSelectImage from "./components/WebSelectImage";
 
-import logosLoopNft from "../images/portfolio/logos/loopnft.png";
+import logosTCD from "../images/portfolio/logos/TCD.png";
 import logoIntegrity from "../images/portfolio/logos/integrity.jpeg";
 import logosThrone from "../images/portfolio/logos/throne.jpeg";
 import logosDaniel from "../images/portfolio/logos/danielServices.svg";
@@ -14,7 +14,7 @@ import logosStickyGmails from "../images/portfolio/logos/stickygmails.jpeg";
 import logos300Chefs from "../images/portfolio/logos/300chefs.jpeg";
 import logosWiseBricks from "../images/portfolio/logos/wisebricks.png";
 
-import webshotLoop from "../images/portfolio/webshot/loopnft.png";
+import webshotTCD from "../images/portfolio/webshot/TCD.png";
 import webshotIntegrity from "../images/portfolio/webshot/integrity.png";
 import webshotDaniel from "../images/portfolio/webshot/danielServices.png";
 import webshotThrone from "../images/portfolio/webshot/throne.jpeg";
@@ -64,7 +64,7 @@ function Features() {
             {/* Content */}
             <div
               className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
-              data-aos="fade-right"    
+              data-aos="fade-right"
             >
               {/* <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>
@@ -119,10 +119,7 @@ function Features() {
                       setTab(7);
                     }}
                   >
-                    <SmallWebSelect
-                      title="Loop NFT"
-                      image={logosLoopNft}
-                    />
+                    <SmallWebSelect title="TC Detail" image={logosTCD} />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -136,10 +133,7 @@ function Features() {
                       setTab(10);
                     }}
                   >
-                    <SmallWebSelect
-                      title="Integrity"
-                      image={logoIntegrity}
-                    />
+                    <SmallWebSelect title="Integrity" image={logoIntegrity} />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -170,10 +164,7 @@ function Features() {
                       setTab(4);
                     }}
                   >
-                    <SmallWebSelect
-                      title="OmniKit"
-                      image={logosOmniKit}
-                    />
+                    <SmallWebSelect title="OmniKit" image={logosOmniKit} />
                   </a>
                   <a
                     className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -300,9 +291,9 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <WebSelectImage
-                    image={webshotLoop}
-                    alt="Loop NFT Screenshot"
-                    link="https://loopnft.linear.tools/"
+                    image={webshotTCD}
+                    alt="TC Detail Screenshot"
+                    link="https://www.tcdetail.net/"
                   />
                 </Transition>
                 <Transition

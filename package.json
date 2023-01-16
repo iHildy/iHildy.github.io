@@ -1,49 +1,96 @@
 {
-  "name": "simple-light-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.1.1",
-    "@tailwindcss/forms": "^0.3.2",
-    "@tailwindcss/postcss7-compat": "^2.1.0",
-    "aos": "^3.0.0-beta.6",
-    "autoprefixer": "^9",
-    "cruip-js-toolkit": "^1.0.2",
-    "node-sass": "^5.0.0",
-    "postcss": "^7",
-    "postcss-cli": "^8.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-tooltip": "^4.2.17",
-    "react-transition-group": "^4.4.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  },
+  "name": "next-tailwind-template",
+  "version": "1.22.19",
+  "private": false,
+  "description": "Template for Next.js with Tailwind CSS with great SEO",
+  "main": "pages/index.jsx",
   "scripts": {
-    "dev": "craco start",
-    "build": "prettier --write . && craco build",
-    "test": "craco test",
-    "eject": "craco eject",
-    "format": "prettier --write ."
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
+    "format": "yarn prettier --write .",
+    "find:unused": "next-unused"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iHildy/next-tailwind-template.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "tailwind",
+    "next",
+    "template"
+  ],
+  "author": "iHildy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iHildy/next-tailwind-template/issues"
+  },
+  "homepage": "https://github.com/iHildy/next-tailwind-template#readme",
+  "dependencies": {
+    "@headlessui/react": "^1.4.3",
+    "@loadable/component": "^5.14.1",
+    "@tailwindcss/typography": "^0.5.0",
+    "aos": "2.3.4",
+    "autoprefixer": "^10.1.0",
+    "next": "^12.0.8",
+    "next-seo": "^4.17.0",
+    "next-themes": "0.0.15",
+    "prettier": "^2.5.1",
+    "react": "17.0.2",
+    "react-dom": "^17.0.1",
+    "react-headroom": "^3.1.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^6.2.1",
+    "react-scroll": "^1.8.4",
+    "tailwindcss": "^3.0.15"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "@types/react": "^17.0.0",
+    "lint-staged": "^12.1.7",
+    "next-unused": "^0.0.6",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.3",
+    "prettier-plugin-tailwindcss": "^0.1.4"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{md,mdx,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "next-unused": {
+    "alias": {
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
   }
 }

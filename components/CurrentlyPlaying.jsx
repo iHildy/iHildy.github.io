@@ -8,7 +8,7 @@ const CurrentlyPlaying = () => {
 
   if (lastFM.status !== "playing") {
     return (
-      <div className="flex items-center space-x-2 text-lg font-medium text-[#1DB954]">
+      <div className="flex mb-6 items-center space-x-2 text-lg font-medium text-[#1DB954]">
         <BsSpotify className="text-2xl" />
         <p>
           Not listening to anything right now
@@ -18,7 +18,7 @@ const CurrentlyPlaying = () => {
   }
 
   return (
-    <div className="flex items-center space-x-2 text-lg font-medium text-[#1DB954]">
+    <div className="mb-6 flex items-center space-x-2 text-lg font-medium text-[#1DB954]">
       <BsSpotify className="text-2xl" />
       <p>
         Listening to {lastFM.song.name} by {lastFM.song.artist}

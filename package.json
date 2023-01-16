@@ -1,96 +1,25 @@
 {
-  "name": "next-tailwind-template",
-  "version": "1.22.19",
-  "private": false,
-  "description": "Template for Next.js with Tailwind CSS with great SEO",
-  "main": "pages/index.jsx",
+  "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
-    "dev": "next",
-    "start": "next start",
-    "format": "yarn prettier --write .",
-    "find:unused": "next-unused"
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iHildy/next-tailwind-template.git"
-  },
-  "keywords": [
-    "tailwind",
-    "next",
-    "template"
-  ],
-  "author": "iHildy",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iHildy/next-tailwind-template/issues"
-  },
-  "homepage": "https://github.com/iHildy/next-tailwind-template#readme",
   "dependencies": {
-    "@headlessui/react": "^1.4.3",
-    "@loadable/component": "^5.14.1",
-    "@tailwindcss/typography": "^0.5.0",
-    "aos": "2.3.4",
-    "autoprefixer": "^10.1.0",
-    "next": "^12.0.8",
-    "next-seo": "^4.17.0",
-    "next-themes": "0.0.15",
-    "prettier": "^2.5.1",
-    "react": "17.0.2",
-    "react-dom": "^17.0.1",
-    "react-headroom": "^3.1.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
-    "react-router-dom": "^6.2.1",
-    "react-scroll": "^1.8.4",
-    "tailwindcss": "^3.0.15"
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "lint-staged": "^12.1.7",
-    "next-unused": "^0.0.6",
-    "postcss": "^8.2.1",
-    "postcss-loader": "^6.2.1",
-    "postcss-preset-env": "^7.2.3",
-    "prettier-plugin-tailwindcss": "^0.1.4"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ],
-    "**/*.{md,mdx,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "next-unused": {
-    "alias": {
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ]
-    },
-    "debug": true,
-    "include": [
-      "components",
-      "lib",
-      "pages"
-    ],
-    "exclude": [],
-    "entrypoints": [
-      "pages"
-    ]
+    "@types/node": "18.11.3",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "prettier": "2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.4"
   }
 }

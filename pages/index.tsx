@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import CurrentlyPlaying from "../components/CurrentlyPlaying";
 
 import { CgFileDocument } from "react-icons/cg";
 import { SiDiscord, SiTwitter } from "react-icons/si";
 import { TfiLinkedin } from "react-icons/tfi";
+import { TiLocation } from "react-icons/ti";
 import { BsGithub, BsPeopleFill } from "react-icons/bs";
 
 
@@ -16,8 +18,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="mt-10 flex w-full flex-1 flex-col items-center justify-center px-3 text-center sm:mt-0 md:px-20 mx-auto">
+      <main className="mx-auto mt-10 flex w-full flex-1 flex-col items-center justify-center px-3 text-center sm:mt-0 md:px-20">
         <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
+        <div className="flex space-x-1 pt-2 text-lg">
+          <TiLocation className="text-2xl" />
+          <span>Austin, TX</span>
+        </div>
         {/* <h2 className="pt-1 text-lg font-medium">(ian@hildy.dev)</h2> */}
 
         <p className="mt-3 text-2xl">
@@ -76,7 +82,7 @@ const Home: NextPage = () => {
           </a>
         </div>
 
-        <div className="my-6 px-2 grid lg:grid-cols-2 gap-4 sm:gap-10">
+        <div className="my-6 grid gap-4 px-2 sm:gap-10 lg:grid-cols-2">
           <a
             href="https://linear.consulting"
             target="_blank"
@@ -143,6 +149,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
+        <CurrentlyPlaying />
       </main>
     </div>
   );

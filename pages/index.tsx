@@ -18,8 +18,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="mx-auto mt-10 flex w-full flex-1 flex-col items-center justify-center text-center sm:mt-0 md:px-20">
-        <div className='flex-col justify-center items-center'>
+      <main className="mt-10 sm:mt-0 mx-auto">
+        <div className='flex-col justify-center items-center text-center'>
           <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
           <div className="flex space-x-1 pt-2 text-lg justify-center">
             <TiLocation className="text-2xl" />
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         </div>
 
 
-        <div className="mt-5 flex max-w-4xl flex-wrap items-center justify-center space-x-3 sm:w-full">
+        <div className="mt-5 flex items-center justify-center space-x-3">
           <a
             href="/resume.pdf"
             className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
           </a>
         </div>
 
-        <div className="my-6 mx-auto grid gap-4 px-4 sm:gap-10 lg:grid-cols-2">
+        <div className="my-6 mx-auto grid gap-4 px-4 sm:gap-10 lg:grid-cols-2 place-content-center">
           <a
             href="https://linear.consulting"
             target="_blank"

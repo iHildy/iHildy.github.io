@@ -7,7 +7,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { SiDiscord, SiTwitter } from "react-icons/si";
 import { TfiLinkedin } from "react-icons/tfi";
 import { TiLocation } from "react-icons/ti";
-import { BsGithub, BsPeopleFill } from "react-icons/bs";
+import { BsGithub, BsCalendar2PlusFill } from "react-icons/bs";
 
 
 const Home: NextPage = () => {
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsPeopleFill className="text-2xl sm:text-3xl" />
+            <BsCalendar2PlusFill className="text-2xl sm:text-3xl" />
           </a>
           <a
             href="https://www.linkedin.com/in/ian-hildebrand/"

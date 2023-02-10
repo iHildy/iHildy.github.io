@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           </div>
           <p className="mt-3 text-2xl">
             <a className="text-blue-600" href="mailto:ian@hildy.dev">
-              ian@hildy.dev
+              ian@hildy.io
             </a>
           </p>
         </div>

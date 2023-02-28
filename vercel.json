@@ -4,6 +4,11 @@
   },
   "redirects": [
     { 
+      "source": "/dorm",
+      "destination": "https://ihildy.notion.site/Dorm-Packing-List-7c373e28e3b14bef98ba3d4a144078ed", 
+      "permanent": true
+    },
+    { 
       "source": "/tips",
       "destination": "https://tips.hildy.dev/", 
       "permanent": true

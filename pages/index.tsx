@@ -86,7 +86,7 @@ const Home: NextPage = () => {
 
         <div className="my-6 mx-auto grid gap-4 px-4 sm:gap-10 lg:grid-cols-2 place-content-center">
           <a
-            href="https://linear.consulting"
+            href="https://hirelinear.com"
             target="_blank"
             rel="noopener noreferrer"
             className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
             <p className="pt-1 text-lg font-medium">Sep 2020 - Present</p>
             <p className="mt-4 text-xl">
               Bringing your vision to life with a talented team of designers and
-              developers.
+              developers. Generating millions for customers.
             </p>
           </a>
 

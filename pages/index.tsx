@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             <CgFileDocument className="text-2xl sm:text-3xl" />
           </a>
           <a
-            href="https://calendly.com/ian-hildebrand"
+            href="https://cal.com/ihildy"
             className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
             target="_blank"
             rel="noopener noreferrer"
@@ -73,14 +73,6 @@ const Home: NextPage = () => {
             rel="noopener noreferrer"
           >
             <SiDiscord className="text-2xl sm:text-3xl" />
-          </a>
-          <a
-            href="https://twitter.com/ianhildy"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTwitter className="text-2xl sm:text-3xl" />
           </a>
         </div>
 

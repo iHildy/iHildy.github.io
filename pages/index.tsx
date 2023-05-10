@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
 import CurrentlyPlaying from "../components/CurrentlyPlaying";
+import Script from "next/script";
 
 import { CgFileDocument } from "react-icons/cg";
 import { SiDiscord, SiTwitter } from "react-icons/si";
@@ -9,19 +9,32 @@ import { TfiLinkedin } from "react-icons/tfi";
 import { TiLocation } from "react-icons/ti";
 import { BsGithub, BsCalendar2PlusFill } from "react-icons/bs";
 
-
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>Ian Hildebrand</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-241KX30Q4D"
+        />
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-241KX30Q4D');
+          `}
+        </Script>
       </Head>
 
-      <main className="mt-10 sm:mt-0 mx-auto">
-        <div className='flex-col justify-center items-center text-center'>
+      <main className="mx-auto mt-10 sm:mt-0">
+        <div className="flex-col items-center justify-center text-center">
           <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
-          <div className="flex space-x-1 pt-2 text-lg justify-center">
+          <div className="flex justify-center space-x-1 pt-2 text-lg">
             <TiLocation className="text-2xl" />
             <span>Austin, TX</span>
           </div>
@@ -31,7 +44,6 @@ const Home: NextPage = () => {
             </a>
           </p>
         </div>
-
 
         <div className="mt-5 flex items-center justify-center space-x-3">
           <a
@@ -76,7 +88,7 @@ const Home: NextPage = () => {
           </a>
         </div>
 
-        <div className="my-6 mx-auto grid gap-4 px-4 sm:gap-10 lg:grid-cols-2 place-content-center">
+        <div className="my-6 mx-auto grid place-content-center gap-4 px-4 sm:gap-10 lg:grid-cols-2">
           <a
             href="https://hirelinear.com"
             target="_blank"
@@ -147,6 +159,6 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

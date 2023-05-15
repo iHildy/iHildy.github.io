@@ -4,7 +4,7 @@ import CurrentlyPlaying from "../components/CurrentlyPlaying";
 import Script from "next/script";
 
 import { CgFileDocument } from "react-icons/cg";
-import { SiDiscord, SiTwitter } from "react-icons/si";
+import { SiDiscord } from "react-icons/si";
 import { TfiLinkedin } from "react-icons/tfi";
 import { TiLocation } from "react-icons/ti";
 import { BsGithub, BsCalendar2PlusFill } from "react-icons/bs";
@@ -16,11 +16,16 @@ const Home: NextPage = () => {
         <title>Ian Hildebrand</title>
         <link rel="icon" href="/favicon.ico" />
         {/* <!-- Google tag (gtag.js) --> */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=G-241KX30Q4D" />`,
+          }}
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-241KX30Q4D"
         />
-        <Script>
+        <Script id="google-tag-manager" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -28,6 +33,15 @@ const Home: NextPage = () => {
 
           gtag('config', 'G-241KX30Q4D');
           `}
+        </Script>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','G-241KX30Q4D');
+      `}
         </Script>
       </Head>
 

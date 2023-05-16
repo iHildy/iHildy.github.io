@@ -9,6 +9,11 @@
       "permanent": true
     },
     { 
+      "source": "/productivity",
+      "destination": "https://youtu.be/T6hmdrsLQj8", 
+      "permanent": true
+    },
+    { 
       "source": "/tips",
       "destination": "https://tips.hildy.dev/", 
       "permanent": true

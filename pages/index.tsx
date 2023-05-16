@@ -18,12 +18,12 @@ const Home: NextPage = () => {
         {/* <!-- Google tag (gtag.js) --> */}
         <noscript
           dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=G-241KX30Q4D" />`,
+            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=G-QP9SYVWC6L" />`,
           }}
         />
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-241KX30Q4D"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QP9SYVWC6L"
         />
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-241KX30Q4D');
+          gtag('config', 'G-QP9SYVWC6L');
           `}
         </Script>
         <Script id="google-tag-manager" strategy="afterInteractive">
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','G-241KX30Q4D');
+        })(window,document,'script','dataLayer','G-QP9SYVWC6L');
       `}
         </Script>
       </Head>

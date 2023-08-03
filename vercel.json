@@ -9,6 +9,11 @@
       "permanent": true
     },
     { 
+      "source": "/classes",
+      "destination": "https://ihildy.notion.site/Degree-Plan-6434d14cd4464e6e8f95edd7de4318e9?pvs=4", 
+      "permanent": true
+    },
+    { 
       "source": "/productivity",
       "destination": "https://youtu.be/T6hmdrsLQj8", 
       "permanent": true

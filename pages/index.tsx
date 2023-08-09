@@ -104,6 +104,22 @@ const Home: NextPage = () => {
 
         <div className="my-6 mx-auto grid place-content-center gap-4 px-4 sm:gap-10 lg:grid-cols-2">
           <a
+            href="https://www.trynexus.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
+          >
+            <h3 className="pb-1 text-xl font-semibold text-gray-600">
+              Nexus Finance
+            </h3>
+            <h3 className="text-2xl font-bold">CTO &rarr;</h3>
+            <p className="pt-1 text-lg font-medium">Jun 2023 - Present</p>
+            <p className="mt-4 text-xl">
+              "The bank for Gen-Z entrepreneurs" - A neobank for your new side
+              hustle.
+            </p>
+          </a>
+          <a
             href="https://hirelinear.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,6 +137,23 @@ const Home: NextPage = () => {
           </a>
 
           <a
+            href="https://heb.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
+          >
+            <h3 className="pb-1 text-xl font-semibold text-gray-600">
+              H-E-B Digital (x2)
+            </h3>
+            <h3 className="text-2xl font-bold">Design Technologist &rarr;</h3>
+            <p className="pt-1 text-lg font-medium">Summer 2022 & Summer 2023</p>
+            <p className="mt-4 text-xl">
+              "Here Everything's Better." - America's 6th Largest Private
+              Company
+            </p>
+          </a>
+
+          <a
             href="https://tcdetail.net"
             target="_blank"
             rel="noopener noreferrer"
@@ -130,42 +163,10 @@ const Home: NextPage = () => {
               TC Detail
             </h3>
             <h3 className="text-2xl font-bold">CEO &rarr;</h3>
-            <p className="pt-1 text-lg font-medium">Apr 2022 - Present</p>
+            <p className="pt-1 text-lg font-medium">Apr 2022 - Aug 2023</p>
             <p className="mt-4 text-xl">
               Top Quality Mobile Car Wash and Detailing for residents of Austin,
-              TX.
-            </p>
-          </a>
-
-          <a
-            href="https://heb.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
-          >
-            <h3 className="pb-1 text-xl font-semibold text-gray-600">
-              H-E-B Digital
-            </h3>
-            <h3 className="text-2xl font-bold">Software Developer &rarr;</h3>
-            <p className="pt-1 text-lg font-medium">May 2022 - Jul 2022</p>
-            <p className="mt-4 text-xl">
-              "Here Everything's Better." - America's 6th Largest Private
-              Company
-            </p>
-          </a>
-
-          <a
-            href="https://ensora.co/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
-          >
-            <h3 className="pb-1 text-xl font-semibold text-gray-600">Ensora</h3>
-            <h3 className="text-2xl font-bold">Software Developer &rarr;</h3>
-            <p className="pt-1 text-lg font-medium">Mar 2021 - Sep 2021</p>
-            <p className="mt-4 text-xl">
-              A student-founded company-development business with clientele like
-              the World Health Organization and Cancer Research UK.
+              TX. Sold in Aug 2023.
             </p>
           </a>
         </div>

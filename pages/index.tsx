@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
           <div className="flex justify-center space-x-1 pt-2 text-lg">
             <TiLocation className="text-2xl" />
-            <span>Austin, TX</span>
+            <span>Austin & Dallas, TX</span>
           </div>
           <p className="mt-3 text-2xl">
             <a className="text-blue-600" href="mailto:ian@hildy.dev">

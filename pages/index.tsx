@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <span>Austin & Dallas, TX</span>
           </div>
           <p className="mt-3 text-2xl">
-            <a className="text-blue-600" href="mailto:ian@hildy.dev">
+            <a className="text-blue-600" href="mailto:ian@hildy.io">
               ian@hildy.io
             </a>
           </p>

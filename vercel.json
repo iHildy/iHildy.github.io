@@ -29,6 +29,11 @@
       "permanent": true
     },
     { 
+      "source": "/cartshare",
+      "destination": "https://docs.google.com/presentation/d/1EvO22ty_rolJJXQ3be7ZEVKRZngqT_qsnp7WMt7Sdio/edit?usp=sharing", 
+      "permanent": true
+    },
+    { 
       "source": "/resume",
       "destination": "https://hildy.dev/resume.pdf/", 
       "permanent": true

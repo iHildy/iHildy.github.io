@@ -103,10 +103,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="my-6 mx-auto grid place-content-center gap-4 px-4 sm:gap-10 lg:grid-cols-2">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
           >
             <h3 className="pb-1 text-xl font-semibold text-gray-600">
@@ -115,7 +112,7 @@ const Home: NextPage = () => {
             <h3 className="text-2xl font-bold">Founder</h3>
             <p className="pt-1 text-lg font-medium">Mar 2024 - Present</p>
             <p className="mt-4 text-xl">Providing purchasing power to teens.</p>
-          </a>
+          </div>
           <a
             href="https://hirelinear.com"
             target="_blank"

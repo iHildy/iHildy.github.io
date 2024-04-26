@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             <h3 className="pb-1 text-xl font-semibold text-gray-600">
               Stealth Startup
             </h3>
-            <h3 className="text-2xl font-bold">Founder &rarr;</h3>
+            <h3 className="text-2xl font-bold">Founder</h3>
             <p className="pt-1 text-lg font-medium">Mar 2024 - Present</p>
             <p className="mt-4 text-xl">Providing purchasing power to teens.</p>
           </a>

@@ -48,9 +48,9 @@ const Home: NextPage = () => {
       <main className="mx-auto mt-10 sm:mt-0">
         <div className="flex-col items-center justify-center text-center">
           <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
-          <div className="flex justify-center space-x-1 pt-2 text-lg">
-            <TiLocation className="text-2xl" />
-            <span>Austin & Dallas, TX</span>
+          <div className="flex justify-center items-center space-x-1 pt-2 text-lg">
+            <TiLocation className="text-xl mb-0.5" />
+            <span>Austin & Dallas, Texas</span>
           </div>
           <p className="mt-3 text-2xl">
             <a className="text-blue-600" href="mailto:ian@hildy.io">
@@ -61,58 +61,48 @@ const Home: NextPage = () => {
 
         <div className="mt-5 flex items-center justify-center space-x-3">
           <a
-            href="/resume.pdf"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <CgFileDocument className="text-2xl sm:text-3xl" />
-          </a>
-          <a
-            href="https://cal.com/ihildy"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsCalendar2PlusFill className="text-2xl sm:text-3xl" />
-          </a>
-          <a
             href="https://www.linkedin.com/in/ian-hildebrand/"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
+            className="trans rounded-xl border-2 border-gray-200 p-2 hover:bg-gray-200 hover:bg-transparent sm:p-2.5"
             target="_blank"
             rel="noopener noreferrer"
           >
             <TfiLinkedin className="text-2xl sm:text-3xl" />
           </a>
           <a
-            href="https://github.com/ihildy"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
+            href="https://cal.com/ihildy"
+            className="trans rounded-xl border-2 border-gray-200 p-2 hover:bg-gray-200 hover:bg-transparent sm:p-2.5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsGithub className="text-2xl sm:text-3xl" />
+            <BsCalendar2PlusFill className="text-2xl sm:text-3xl" />
           </a>
           <a
-            href="https://discord.gg/7PepvThQ9p"
-            className="trans rounded-xl border-2 border-gray-200 bg-gray-200 p-2 hover:bg-transparent sm:p-2.5"
+            href="/resume.pdf"
+            className="trans rounded-xl border-2 border-gray-200 p-2 hover:bg-gray-200 hover:bg-transparent sm:p-2.5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SiDiscord className="text-2xl sm:text-3xl" />
+            <CgFileDocument className="text-2xl sm:text-3xl" />
           </a>
         </div>
 
         <div className="my-6 mx-auto grid place-content-center gap-4 px-4 sm:gap-10 lg:grid-cols-2">
-          <div
-            className="trans w-96 rounded-xl border p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
+          <a
+            href="https://spense.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="trans w-96 rounded-xl border bg-gray-50 p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
           >
-            <h3 className="pb-1 text-xl font-semibold text-gray-600">
-              Stealth Startup
-            </h3>
-            <h3 className="text-2xl font-bold">Founder</h3>
-            <p className="pt-1 text-lg font-medium">Mar 2024 - Present</p>
-            <p className="mt-4 text-xl">Providing purchasing power to teens.</p>
-          </div>
+            <h3 className="pb-1 text-xl font-semibold text-gray-600">Spense</h3>
+            <h3 className="text-2xl font-bold">Founder &rarr;</h3>
+            <p className="pt-1 text-lg font-medium text-green-700">
+              Mar 2024 - Present
+            </p>
+            <p className="mt-4 text-xl">
+              Providing purchaisng power to teens. Software platform increasing
+              revenue for clothing retailers.
+            </p>
+          </a>
           <a
             href="https://hirelinear.com"
             target="_blank"

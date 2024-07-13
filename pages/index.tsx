@@ -99,7 +99,7 @@ const Home: NextPage = () => {
               Mar 2024 - Present
             </p>
             <p className="mt-4 text-xl">
-              Providing purchaisng power to teens. Software platform increasing
+              Providing purchasing power to teens. Software platform increasing
               revenue for clothing retailers.
             </p>
           </a>

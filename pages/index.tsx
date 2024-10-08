@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import CurrentlyPlaying from "../components/CurrentlyPlaying";
 import Script from "next/script";
 
@@ -46,9 +47,16 @@ const Home: NextPage = () => {
 
       <main className="mx-auto mt-10 sm:mt-0">
         <div className="flex-col items-center justify-center text-center">
+          <Image
+            src="/pfp.webp"
+            width={200}
+            height={200}
+            alt="Picture of the Ian Hildebrand"
+            className="mx-auto rounded-full mb-4 w-[200px] h-[200px]"
+          />
           <h1 className="text-5xl font-bold sm:text-6xl">Ian Hildebrand</h1>
-          <div className="flex justify-center items-center space-x-1 pt-2 text-lg">
-            <TiLocation className="text-xl mb-0.5" />
+          <div className="flex items-center justify-center space-x-1 pt-2 text-lg">
+            <TiLocation className="mb-0.5 text-xl" />
             <span>Austin & Dallas, Texas</span>
           </div>
           <p className="mt-3 text-2xl">
@@ -92,13 +100,16 @@ const Home: NextPage = () => {
             // rel="noopener noreferrer"
             className="trans w-96 rounded-xl border bg-gray-50 p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
           >
-            <h3 className="pb-1 text-xl font-semibold text-gray-600">Looking...</h3>
+            <h3 className="pb-1 text-xl font-semibold text-gray-600">
+              Looking...
+            </h3>
             <h3 className="text-2xl font-bold">Internship &rarr;</h3>
             <p className="pt-1 text-lg font-medium text-green-700">
               May 2025 - Apr 2025
             </p>
             <p className="mt-4 text-xl">
-              Looking for my next corporate internship over the 2025 summer. Open to project managment and technology based roles!
+              Looking for my next corporate internship over the 2025 summer.
+              Open to project managment and technology based roles!
             </p>
           </div>
           <a

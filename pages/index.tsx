@@ -4,10 +4,9 @@ import CurrentlyPlaying from "../components/CurrentlyPlaying";
 import Script from "next/script";
 
 import { CgFileDocument } from "react-icons/cg";
-import { SiDiscord } from "react-icons/si";
 import { TfiLinkedin } from "react-icons/tfi";
 import { TiLocation } from "react-icons/ti";
-import { BsGithub, BsCalendar2PlusFill } from "react-icons/bs";
+import { BsCalendar2PlusFill } from "react-icons/bs";
 
 const Home: NextPage = () => {
   return (
@@ -87,22 +86,21 @@ const Home: NextPage = () => {
         </div>
 
         <div className="my-6 mx-auto grid place-content-center gap-4 px-4 sm:gap-10 lg:grid-cols-2">
-          <a
-            href="https://spense.me/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            // href="https://spense.me/"
+            // target="_blank"
+            // rel="noopener noreferrer"
             className="trans w-96 rounded-xl border bg-gray-50 p-6 text-left hover:bg-gray-200 focus:bg-gray-200"
           >
-            <h3 className="pb-1 text-xl font-semibold text-gray-600">Spense</h3>
-            <h3 className="text-2xl font-bold">Founder &rarr;</h3>
+            <h3 className="pb-1 text-xl font-semibold text-gray-600">Looking...</h3>
+            <h3 className="text-2xl font-bold">Internship &rarr;</h3>
             <p className="pt-1 text-lg font-medium text-green-700">
-              Mar 2024 - Present
+              May 2025 - Apr 2025
             </p>
             <p className="mt-4 text-xl">
-              Providing purchasing power to teens. Software platform increasing
-              revenue for clothing retailers.
+              Looking for my next corporate internship over the 2025 summer. Open to project managment and technology based roles!
             </p>
-          </a>
+          </div>
           <a
             href="https://hirelinear.com"
             target="_blank"
@@ -113,7 +111,7 @@ const Home: NextPage = () => {
               Linear Consulting
             </h3>
             <h3 className="text-2xl font-bold">CEO & Web Developer &rarr;</h3>
-            <p className="pt-1 text-lg font-medium">Sep 2020 - Present</p>
+            <p className="pt-1 text-lg font-medium">Sep 2020 - Mar 2024</p>
             <p className="mt-4 text-xl">
               Bringing your vision to life with a talented team of designers and
               developers. Generating millions for customers.

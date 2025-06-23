@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('/Menlo-Regular.woff') format('woff');
+}
+
+@theme {
+  --font-sans: "Menlo Regular", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

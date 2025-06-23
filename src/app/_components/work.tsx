@@ -1,80 +1,94 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaBusinessTime } from "react-icons/fa6";
 
 const workExperiences = [
   {
     company: "GreekPoints",
     position: "Founder and Chief Executive Officer",
     period: "Mar 2024 — Present",
-    logoSrc: "/greekpoints.png",
-    logoAlt: "GreekPoints logo"
+    logoSrc: "/work/greekpoints.png",
+    logoAlt: "GreekPoints logo",
+    description: "Helping frats & sororites raise more money for philanthropy on a modern donation platform. $25k+ processed in it's first semester",
+    companyUrl: "https://greekpoints.org/"
   },
   {
-    company: "Linear",
+    company: "Linear Consulting",
     position: "Founder and Chief Executive Officer",
     period: "Sep 2020 — Apr 2024",
-    logoSrc: "/linear.png",
-    logoAlt: "Linear logo"
+    logoSrc: "/work/linear.png",
+    logoAlt: "Linear logo",
+    description: "Getting startups off the ground in terms of logos, websites, marketing, taxes, etc.",
+    companyUrl: "https://linear.hildy.io/"
   },
   {
     company: "H-E-B Digital",
     position: "Design Technologist Intern",
     period: "Jun 2023 — Aug 2023",
-    logoSrc: "/heb.jpeg",
-    logoAlt: "H-E-B Digital logo"
+    logoSrc: "/work/heb.png",
+    logoAlt: "H-E-B Digital logo",
+    description: "The 5th largest private company by revenue. Prototyped an AI enabled way of making pickup orders easier.",
+    companyUrl: ""
   },
   {
     company: "TC Detail & Power Washing",
     position: "Founder and Chief Executive Officer",
     period: "Apr 2022 — Aug 2023",
-    logoSrc: "/tcdetail.png",
-    logoAlt: "TC Detail & Power Washing logo"
+    logoSrc: "/work/tcdetail.png",
+    logoAlt: "TC Detail & Power Washing logo",
+    description: "Scaled from just the cars on my street to a mobile detailing business across Austin with 5 stars and 10 employees.",
+    companyUrl: "https://tcdetail.net/"
   },
   {
     company: "H-E-B Digital",
     position: "Software Engineer Intern",
     period: "May 2022 — Jul 2022",
-    logoSrc: "/heb2.png",
-    logoAlt: "H-E-B Digital logo"
+    logoSrc: "/work/heb.png",
+    logoAlt: "H-E-B Digital logo",
+    description: "Utilized geospatial analytics to determine new markets for expansion, analyze customer behavior, and improve customer growth.",
+    companyUrl: ""
   }
 ];
 
 export default function Work() {
   return (
-    <div className="flex flex-col gap-6 w-full">
-      <div className="flex items-center gap-3">
-        <FaBusinessTime className="w-5 h-5 text-black" />
+    <div className="flex flex-col gap-6 w-full pt-4 border-t border-gray-100">
+      {/* <div className="flex items-center gap-3">
         <h2 className="text-2xl font-bold text-black">Work</h2>
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-6">
         {workExperiences.map((experience, index) => (
           <div key={index} className="flex items-start gap-4 group">
-            <div className="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 bg-white border border-gray-200">
+            <Link href={experience.companyUrl} target="_blank">
+            <div className="w-[40px] h-[40px] rounded-xl overflow-hidden flex-shrink-0 bg-white border border-gray-200">
               <Image
                 src={experience.logoSrc}
                 alt={experience.logoAlt}
-                width={48}
-                height={48}
+                width={40}
+                height={40}
                 className="w-full h-full object-cover"
               />
             </div>
-            
+            </Link>
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-4">
-                <div className="flex flex-col gap-0.5">
+                <Link href={experience.companyUrl} target="_blank">
+                <div className="flex flex-col">
                   <h3 className="text-lg font-semibold text-black group-hover:text-gray-700 transition-colors">
                     {experience.company}
                   </h3>
-                  <p className="text-base text-gray-600">
+                  <p className="text-base text-gray-600 font-medium">
                     {experience.position}
                   </p>
                 </div>
+                </Link>
                 <div className="text-sm text-gray-500 font-medium whitespace-nowrap">
                   {experience.period}
                 </div>
               </div>
+              <p className="text-sm text-gray-600 pr-4 pt-1.5">
+                {experience.description}
+              </p>
             </div>
           </div>
         ))}

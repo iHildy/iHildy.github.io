@@ -4,10 +4,19 @@
     font-family: 'Menlo Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Menlo Regular'), url('/Menlo-Regular.woff') format('woff');
+    src: local('Menlo Regular'), url('/fonts/Menlo-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Celine Stencil';
+  src: url('/fonts/celine-stencil.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
   --font-sans: "Menlo Regular", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-celine: "Celine Stencil", ui-serif, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

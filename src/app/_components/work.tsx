@@ -51,42 +51,40 @@ const workExperiences = [
 
 export default function Work() {
   return (
-    <div className="flex flex-col gap-6 w-full pt-4 border-t border-gray-100">
+    <div className="flex flex-col gap-4 sm:gap-6 w-full border-t border-gray-100 pt-4">
       {/* <div className="flex items-center gap-3">
-        <h2 className="text-2xl font-bold text-black">Work</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-black">Work</h2>
       </div> */}
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
         {workExperiences.map((experience, index) => (
-          <div key={index} className="flex items-start gap-4 group">
-            <Link href={experience.companyUrl} target="_blank">
-            <div className="w-[40px] h-[40px] rounded-xl overflow-hidden flex-shrink-0 bg-white border border-gray-200">
+          <div key={index} className="flex items-start gap-3 sm:gap-4 group">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-white border border-gray-200">
               <Image
                 src={experience.logoSrc}
                 alt={experience.logoAlt}
-                width={40}
-                height={40}
+                width={48}
+                height={48}
                 className="w-full h-full object-cover"
               />
             </div>
-            </Link>
+            
             <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-4">
-                <Link href={experience.companyUrl} target="_blank">
-                <div className="flex flex-col">
-                  <h3 className="text-lg font-semibold text-black group-hover:text-gray-700 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
+                <div className="flex flex-col gap-1 min-w-0">
+                  <h3 className="text-base sm:text-lg font-semibold text-black group-hover:text-gray-700 transition-colors leading-tight">
                     {experience.company}
                   </h3>
-                  <p className="text-base text-gray-600 font-medium">
+                  <p className="text-sm sm:text-base text-gray-600 leading-tight">
                     {experience.position}
                   </p>
                 </div>
-                </Link>
-                <div className="text-sm text-gray-500 font-medium whitespace-nowrap">
+                <div className="text-xs sm:text-sm text-gray-500 font-medium sm:whitespace-nowrap mt-1 sm:mt-0">
                   {experience.period}
                 </div>
               </div>
-              <p className="text-sm text-gray-600 pr-4 pt-1.5">
+              
+              <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
                 {experience.description}
               </p>
             </div>
@@ -94,14 +92,14 @@ export default function Work() {
         ))}
       </div>
 
-      <div className="mt-4 pt-4 border-t border-gray-100">
+      <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-gray-100">
         <Link 
           href="/resume.pdf" 
           target="_blank"
           className="inline-flex items-center gap-2 text-black hover:text-gray-700 transition-colors group"
         >
-          <span className="font-medium">Download CV</span>
-          <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="font-medium text-sm sm:text-base">Download CV</span>
+          <svg className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </Link>

@@ -6,7 +6,7 @@ const workExperiences = [
     company: "GreekPoints",
     position: "Founder and Chief Executive Officer",
     period: "Mar 2024 — Present",
-    logoSrc: "/work/greekpoints.png",
+    logoSrc: "/work/greekpoints.webp",
     logoAlt: "GreekPoints logo",
     description: "Helping frats & sororites raise more money for philanthropy on a modern donation platform. $25k+ processed in it's first semester.",
     companyUrl: "https://greekpoints.org/"
@@ -15,7 +15,7 @@ const workExperiences = [
     company: "Linear Consulting",
     position: "Founder and Chief Executive Officer",
     period: "Sep 2020 — Apr 2024",
-    logoSrc: "/work/linear.png",
+    logoSrc: "/work/linear.webp",
     logoAlt: "Linear logo",
     description: "Getting startups off the ground with logos, websites, marketing, taxes, etc. 700+ clients that generated over $10M in revenue. Personally developing ecommerce stores, dashboards, email marketing, and more.",
     companyUrl: "https://linear.hildy.io/"
@@ -24,7 +24,7 @@ const workExperiences = [
     company: "H-E-B Digital",
     position: "Design Technologist Intern",
     period: "Jun 2023 — Aug 2023",
-    logoSrc: "/work/heb.png",
+    logoSrc: "/work/heb.webp",
     logoAlt: "H-E-B Digital logo",
     description: "The 5th largest private company by revenue. Built an AI enabled way of making grocery pickup orders easier.",
     companyUrl: "https://careers.heb.com/digital"
@@ -33,7 +33,7 @@ const workExperiences = [
     company: "TC Detail & Power Washing",
     position: "Founder and Chief Executive Officer",
     period: "Apr 2022 — Aug 2023",
-    logoSrc: "/work/tcdetail.png",
+    logoSrc: "/work/tcdetail.webp",
     logoAlt: "TC Detail & Power Washing logo",
     description: "Scaled from just the cars on my street to a mobile detailing business across Austin with 5 stars and 10 employees.",
     companyUrl: "https://tcdetail.net/"
@@ -42,7 +42,7 @@ const workExperiences = [
     company: "H-E-B Digital",
     position: "Software Engineer Intern",
     period: "May 2022 — Jul 2022",
-    logoSrc: "/work/heb.png",
+    logoSrc: "/work/heb.webp",
     logoAlt: "H-E-B Digital logo",
     description: "Utilized geospatial analytics to determine new markets for expansion, analyze customer behavior, and improve customer growth.",
     companyUrl: "https://careers.heb.com/digital"

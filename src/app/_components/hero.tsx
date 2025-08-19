@@ -12,7 +12,7 @@ export default function Hero() {
 
         <p className="text-base">
           Welcome to my corner of the internet. I&apos;m a software engineer and
-          entrepreneur based in Texas. Currently I&apos;m a student working through university while founding GreekPoints.
+          entrepreneur based in Texas. Currently I&apos;m a student working through university while founding GreekPoints and probably 3 other side projects.
         </p>
         <div className="flex flex-row gap-3">
           <Link className="hover:bg-gray-100 transition-all duration-200 p-1 rounded-lg" target="_blank" href="https://github.com/ihildy">

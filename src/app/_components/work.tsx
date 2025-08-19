@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const workExperiences = [
   {
@@ -8,7 +8,7 @@ const workExperiences = [
     period: "Mar 2024 — Present",
     logoSrc: "/work/greekpoints.png",
     logoAlt: "GreekPoints logo",
-    description: "Helping frats & sororites raise more money for philanthropy on a modern donation platform. $25k+ processed in it's first semester",
+    description: "Helping frats & sororites raise more money for philanthropy on a modern donation platform. $25k+ processed in it's first semester.",
     companyUrl: "https://greekpoints.org/"
   },
   {
@@ -17,7 +17,7 @@ const workExperiences = [
     period: "Sep 2020 — Apr 2024",
     logoSrc: "/work/linear.png",
     logoAlt: "Linear logo",
-    description: "Getting startups off the ground in terms of logos, websites, marketing, taxes, etc.",
+    description: "Getting startups off the ground with logos, websites, marketing, taxes, etc. 700+ clients that generated over $10M in revenue.",
     companyUrl: "https://linear.hildy.io/"
   },
   {
@@ -26,8 +26,8 @@ const workExperiences = [
     period: "Jun 2023 — Aug 2023",
     logoSrc: "/work/heb.png",
     logoAlt: "H-E-B Digital logo",
-    description: "The 5th largest private company by revenue. Prototyped an AI enabled way of making pickup orders easier.",
-    companyUrl: ""
+    description: "The 5th largest private company by revenue. Built an AI enabled way of making grocery pickup orders easier.",
+    companyUrl: "https://careers.heb.com/digital"
   },
   {
     company: "TC Detail & Power Washing",
@@ -45,7 +45,7 @@ const workExperiences = [
     logoSrc: "/work/heb.png",
     logoAlt: "H-E-B Digital logo",
     description: "Utilized geospatial analytics to determine new markets for expansion, analyze customer behavior, and improve customer growth.",
-    companyUrl: ""
+    companyUrl: "https://careers.heb.com/digital"
   }
 ];
 
@@ -72,8 +72,19 @@ export default function Work() {
             <div className="flex-1 min-w-0">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
                 <div className="flex flex-col gap-1 min-w-0">
-                  <h3 className="text-base sm:text-lg font-semibold text-black group-hover:text-gray-700 transition-colors leading-tight">
-                    {experience.company}
+                  <h3 className="text-base sm:text-lg font-semibold text-black transition-colors leading-tight">
+                    {experience.companyUrl ? (
+                      <Link 
+                        href={experience.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline underline-offset-4 decoration-dashed decoration-2 decoration-gray-700 transition-all ease-in-out transform duration-200"
+                      >
+                        {experience.company}
+                      </Link>
+                    ) : (
+                      experience.company
+                    )}
                   </h3>
                   <p className="text-sm sm:text-base text-gray-600 leading-tight">
                     {experience.position}

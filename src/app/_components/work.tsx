@@ -51,7 +51,7 @@ const workExperiences = [
 
 export default function Work() {
   return (
-    <div className="flex flex-col gap-4 sm:gap-6 w-full border-t border-gray-100 pt-4">
+    <div className="flex flex-col gap-4 sm:gap-6 w-full border-t border-gray-200 pt-4">
       {/* <div className="flex items-center gap-3">
         <h2 className="text-xl sm:text-2xl font-bold text-black">Work</h2>
       </div> */}
@@ -101,19 +101,6 @@ export default function Work() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-2 sm:mt-4 pt-3 sm:pt-4 border-t border-gray-100">
-        <Link 
-          href="/resume.pdf" 
-          target="_blank"
-          className="inline-flex items-center gap-2 text-black hover:text-gray-700 transition-colors group"
-        >
-          <span className="font-medium text-sm sm:text-base">Download CV</span>
-          <svg className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </Link>
       </div>
     </div>
   );

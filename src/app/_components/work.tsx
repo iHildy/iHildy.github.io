@@ -17,7 +17,7 @@ const workExperiences = [
     period: "Sep 2020 — Apr 2024",
     logoSrc: "/work/linear.png",
     logoAlt: "Linear logo",
-    description: "Getting startups off the ground with logos, websites, marketing, taxes, etc. 700+ clients that generated over $10M in revenue.",
+    description: "Getting startups off the ground with logos, websites, marketing, taxes, etc. 700+ clients that generated over $10M in revenue. Personally developing ecommerce stores, dashboards, email marketing, and more.",
     companyUrl: "https://linear.hildy.io/"
   },
   {

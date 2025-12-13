@@ -8,14 +8,6 @@ const sideProjects = [
     period: "Constant",
     isPrivate: true
   },
-  // {
-  //   name: "iwanttoshadow",
-  //   description: "The CommonApp for medical shadowing. HIPAA compliant. Complete only one application. Use it to easily apply to multiple shadowing opportunities in the area.",
-  //   techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "tRPC", "Better Auth", "AWS EC2/SES/S3"],
-  //   liveUrl: "https://iwanttoshadow.hildy.io",
-  //   period: "Current",
-  //   isPrivate: true
-  // },
   {
     name: "Google Jules Task Queue",
     description: "An overengineered, task queue for Google Jules power users (AI async coding agent).",

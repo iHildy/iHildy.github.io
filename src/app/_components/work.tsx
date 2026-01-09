@@ -5,7 +5,7 @@ const workExperiences = [
   {
     company: "GreekPoints",
     position: "Founder and Chief Executive Officer",
-    period: "Mar 2024 — Present",
+    period: "Mar 2024 — Sep 2025",
     logoSrc: "/work/greekpoints.webp",
     logoAlt: "GreekPoints logo",
     description: "Helping frats & sororites raise more money for philanthropy on a modern donation platform. $25k+ processed in it's first semester.",

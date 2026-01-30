@@ -7,7 +7,7 @@ export default function Hero() {
   return (
 <div className="flex flex-col gap-3">
 
-        <Image src="/pfp.webp" alt="Ian Hildebrand" width={100} height={100} className="rounded-lg" />
+        <Image src="/pfp.webp" alt="Ian Hildebrand" width={100} height={100} className="rounded-lg" priority />
         <h1 className="text-3xl font-bold font-celine">Ian Hildebrand</h1>
 
         <p className="text-base">

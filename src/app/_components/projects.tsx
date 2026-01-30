@@ -3,10 +3,19 @@ import Link from "next/link";
 const sideProjects = [
   {
     name: "Homelab Server",
-    description: "2x Dell R710s for hosting all my side projects, dev environments, backups, and more.",
-    techStack: ["Ubuntu Server", "Docker", "Coolify", "Cloudflare Zero Trust"],
+    description: "2x Dell R710s hosting all my side projects, dev environments, backups, and more.",
+    techStack: ["Ubuntu Server", "Docker", "Nginx", "Coolify", "Cloudflare Zero Trust", "Tailscale", "DHCP", "SMB"],
     period: "Constant",
     isPrivate: true
+  },
+  {
+    name: "Google Jules Raycast Extension",
+    description: "Manage and monitor your Google Jules sessions directly from Raycast.",
+    techStack: ["Raycast", "React", "TypeScript"],
+    githubUrl: "https://github.com/iHildy/jules-agents/tree/main",
+    liveUrl: "https://www.youtube.com/watch?v=yhQqTP7OOFE",
+    period: "2026",
+    isPrivate: false
   },
   {
     name: "Google Jules Task Queue",
@@ -18,11 +27,38 @@ const sideProjects = [
     isPrivate: false
   },
   {
+    name: "Google Jules Wrapped",
+    description: "An overengineered, task queue for Google Jules power users (AI async coding agent).",
+    techStack: ["NPM", "TypeScript", "resvg"],
+    githubUrl: "https://github.com/iHildy/jules-wrapped",
+    liveUrl: "https://x.com/ianhildy/status/2005911720917647794?s=20",
+    period: "2025",
+    isPrivate: false
+  },
+  {
     name: "Google Jules Workflow CLI",
     description: "A CLI tool to make working with Google Jules easier with Linear and Github - published on npm.",
     techStack: ["Node.js", "TypeScript", "npm", "Linear API", "GitHub API"],
     githubUrl: "https://github.com/iHildy/google-jules-workflow",
     liveUrl: "https://www.npmjs.com/package/@ihildy/google-jules-workflow",
+    period: "2025",
+    isPrivate: false
+  },
+  {
+    name: "opencode-synced",
+    description: "Android emulator + REST API for automating the Chirp Access app for home automation.",
+    techStack: ["NPM", "opencode", "Bun", "TypeScript"],
+    githubUrl: "https://github.com/iHildy/opencode-synced",
+    liveUrl: "https://www.opencode.cafe/plugin/opencode-synced",
+    period: "2025",
+    isPrivate: false
+  },
+  {
+    name: "Chirp Access Automation",
+    description: "Android emulator + REST API for automating the Chirp Access app for home automation.",
+    techStack: ["TypeScript", "REST", "Docker"],
+    githubUrl: "https://github.com/iHildy/chirp-automation",
+    liveUrl: "https://x.com/ianhildy/status/2003212140631761270?s=20",
     period: "2025",
     isPrivate: false
   },
@@ -37,7 +73,7 @@ const sideProjects = [
   },
   {
     name: "Fraternity Payment Platform",
-    description: "A dashboard for members to setup, modify, defer, and pay for their dues asynchronously.",
+    description: "A dashboard for members to setup, modify, defer, and pay for their dues asynchronously. Including reverse engineering GreekBill to create a sync engine.",
     techStack: ["Next.js", "TypeScript", "Prisma", "Turborepo", "Clerk", "Stripe API"],
     period: "2025",
     isPrivate: true

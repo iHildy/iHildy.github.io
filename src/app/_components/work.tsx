@@ -3,6 +3,15 @@ import Link from "next/link";
 
 const workExperiences = [
   {
+    company: "Google",
+    position: "Software Engineer",
+    period: "Jan 2025 — Current",
+    logoSrc: "/work/google.webp",
+    logoAlt: "Google logo",
+    description: "Helping build Jules at Google Labs - a proactive autonomous AI coding agent.",
+    companyUrl: "https://jules.google/"
+  },
+  {
     company: "GreekPoints",
     position: "Founder and Chief Executive Officer",
     period: "Mar 2024 — Sep 2025",

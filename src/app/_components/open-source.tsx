@@ -152,7 +152,7 @@ async function ContributionCard({ contribution }: { contribution: typeof openSou
 
 export default async function OpenSourceContributions() {
   return (
-    <div className="flex flex-col gap-2 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
+    <div className="flex flex-col gap-4 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
       <div className="flex items-center gap-3">
         <h2 className="text-xl font-bold text-black dark:text-white">Open Source Contributions</h2>
       </div>

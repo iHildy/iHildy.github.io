@@ -89,7 +89,7 @@ const sideProjects = [
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-2 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
+    <div className="flex flex-col gap-4 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
       <div className="flex items-center gap-3">
         <h2 className="text-xl font-bold text-black dark:text-white">Side Projects</h2>
       </div>

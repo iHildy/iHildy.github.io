@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-<div className="flex flex-col gap-3">
+<div className="flex flex-col gap-4">
 
         <Image src="/pfp.webp" alt="Ian Hildebrand" width={100} height={100} className="rounded-lg" priority />
         <h1 className="text-3xl font-bold font-celine text-black dark:text-white">Ian Hildebrand</h1>

@@ -13,8 +13,8 @@ const education = [
 
 export default function Education() {
   return (
-    <div className="flex flex-col gap-4 sm:gap-6 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
-      <div className="flex flex-col gap-4 sm:gap-6">
+    <div className="flex flex-col gap-4 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
+      <div className="flex flex-col gap-4">
         {education.map((edu, index) => (
           <div key={index} className="flex items-start gap-3 sm:gap-4">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">

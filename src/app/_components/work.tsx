@@ -60,12 +60,12 @@ const workExperiences = [
 
 export default function Work() {
   return (
-    <div className="flex flex-col gap-4 sm:gap-6 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
+    <div className="flex flex-col gap-4 w-full border-t border-gray-200 dark:border-gray-700 pt-4">
       {/* <div className="flex items-center gap-3">
         <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white">Work</h2>
       </div> */}
 
-      <div className="flex flex-col gap-4 sm:gap-6">
+      <div className="flex flex-col gap-4">
         {workExperiences.map((experience, index) => (
           <div key={index} className="flex items-start gap-3 sm:gap-4 group">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">

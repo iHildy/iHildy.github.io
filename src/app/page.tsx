@@ -1,6 +1,7 @@
 import Hero from "@/app/_components/hero";
 import WorkExperience from "@/app/_components/work";
 import Projects from "@/app/_components/projects";
+import OpenSourceContributions from "@/app/_components/open-source";
 
 export default async function Home() {
   return (
@@ -8,6 +9,7 @@ export default async function Home() {
         <Hero />
         <WorkExperience />
         <Projects />
+        <OpenSourceContributions />
       </main>
   );
 }

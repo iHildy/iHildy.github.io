@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
+import { ThemeProvider } from "@/app/_components/theme-provider";
 
 const siteUrl = "https://ihildy.com";
 
@@ -52,15 +53,17 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://api.github.com" />
         <link rel="preconnect" href="https://github.com" />
         <link rel="preconnect" href="https://www.linkedin.com" />
         <link rel="preconnect" href="https://x.com" />
       </head>
-      <body>
-        {children}
+      <body className="bg-white dark:bg-gray-900 transition-colors duration-200">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

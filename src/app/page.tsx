@@ -2,6 +2,8 @@ import Hero from "@/app/_components/hero";
 import WorkExperience from "@/app/_components/work";
 import Projects from "@/app/_components/projects";
 import OpenSourceContributions from "@/app/_components/open-source";
+import Navigation from "@/app/_components/navigation";
+import BackToTop from "@/app/_components/back-to-top";
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -31,12 +33,20 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <main className="flex min-h-screen flex-col mx-auto text-black m-10 max-w-3xl gap-4 px-4 lg:px-0">
+      <Navigation />
+      <main className="flex min-h-screen flex-col mx-auto text-black dark:text-white m-10 max-w-3xl gap-4 px-4 lg:px-0">
         <Hero />
-        <WorkExperience />
-        <Projects />
-        <OpenSourceContributions />
+        <section id="work">
+          <WorkExperience />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="opensource">
+          <OpenSourceContributions />
+        </section>
       </main>
+      <BackToTop />
     </>
   );
 }

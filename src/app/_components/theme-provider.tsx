@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 type ThemeContextType = {
   isDark: boolean;
-}
+};
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
@@ -13,7 +13,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    
+
     const handleChange = (e: MediaQueryListEvent | MediaQueryList) => {
       const dark = e.matches;
       setIsDark(dark);
@@ -33,9 +33,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ isDark }}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ isDark }}>{children}</ThemeContext.Provider>
   );
 }
 

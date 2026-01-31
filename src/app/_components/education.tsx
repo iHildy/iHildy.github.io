@@ -5,7 +5,11 @@ const education = [
     school: "University of Texas at Dallas",
     degree: "B.S. Information Systems & Technology",
     period: "2023 — 2027",
-    achievements: ["GPA: 3.7", "Dean's List Fall '24 & Spring '25", "Minor in Entrepreneurship"],
+    achievements: [
+      "GPA: 3.7",
+      "Dean's List Fall '24 & Spring '25",
+      "Minor in Entrepreneurship",
+    ],
     logoSrc: "/education/utd.svg",
     logoAlt: "University of Texas at Dallas icon",
   },

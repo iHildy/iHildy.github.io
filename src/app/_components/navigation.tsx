@@ -14,19 +14,26 @@ export default function Navigation() {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
+    const sections = navItems.map((item) => ({
+      id: item.href.slice(1),
+      element: null as HTMLElement | null,
+    }));
+
     const handleScroll = () => {
-      const sections = navItems.map((item) => item.href.slice(1));
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
+        if (!section.element) {
+          section.element = document.getElementById(section.id);
+        }
+
+        if (section.element) {
+          const { offsetTop, offsetHeight } = section.element;
           if (
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
-            setActiveSection(section);
+            setActiveSection(section.id);
             break;
           }
         }

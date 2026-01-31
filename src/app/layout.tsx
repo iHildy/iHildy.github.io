@@ -55,10 +55,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://api.github.com" />
-        <link rel="preconnect" href="https://github.com" />
-        <link rel="preconnect" href="https://www.linkedin.com" />
-        <link rel="preconnect" href="https://x.com" />
       </head>
       <body className="bg-white dark:bg-gray-900 transition-colors duration-200">
         <ThemeProvider>

@@ -7,7 +7,8 @@ const siteUrl = "https://ihildy.com";
 
 export const metadata: Metadata = {
   title: "Ian Hildebrand",
-  description: "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
+  description:
+    "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   metadataBase: new URL(siteUrl),
   alternates: {
@@ -19,7 +20,8 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Ian Hildebrand",
     title: "Ian Hildebrand",
-    description: "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
+    description:
+      "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
     images: [
       {
         url: "/pfp.webp",
@@ -32,7 +34,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ian Hildebrand",
-    description: "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
+    description:
+      "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
     images: ["/pfp.webp"],
     creator: "@ianhildy",
   },
@@ -61,9 +64,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://x.com" />
       </head>
       <body className="bg-white dark:bg-gray-900 transition-colors duration-200">
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

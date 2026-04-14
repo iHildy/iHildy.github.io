@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const workExperiences = [
   {
-    company: "Google",
+    company: "Magnit for Google",
     position: "Software Engineer",
     period: "Jan 2025 — Current",
     logoSrc: "/work/google.webp",
     logoAlt: "Google logo",
-    description: "Helping build Jules at Google Labs - a proactive autonomous AI coding agent.",
+    description: "Helping build Jules at Google Labs - a proactive autonomous AI coding agent. Employed through Magnit LLC.",
     companyUrl: "https://jules.google/"
   },
   {

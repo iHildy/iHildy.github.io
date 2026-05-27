@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const workExperiences = [
   {
-    company: "Magnit for Google",
+    company: "Google Labs",
     position: "Software Engineer",
     period: "Jan 2025 — Current",
     logoSrc: "/work/google.webp",

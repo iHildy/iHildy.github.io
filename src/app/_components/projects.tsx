@@ -46,7 +46,7 @@ const sideProjects = [
   },
   {
     name: "opencode-synced",
-    description: "Android emulator + REST API for automating the Chirp Access app for home automation.",
+    description: "Sync opencode global configurations between machines with a plugin",
     techStack: ["NPM", "opencode", "Bun", "TypeScript"],
     githubUrl: "https://github.com/iHildy/opencode-synced",
     liveUrl: "https://www.opencode.cafe/plugin/opencode-synced",

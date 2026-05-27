@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const openSourceContributions = [
   {
-    name: "moltbot (formerly clawdbot)",
+    name: "openclaw",
     projectDescription: "The proactive AI assistant that actually does (not ask) things.",
     contributionDescription: "Added Google Chat as a communication channel. Fixed hardcoded onboarding options.",
-    githubUrl: "https://github.com/moltbot/moltbot",
+    githubUrl: "https://github.com/openclaw/openclaw",
     forkUrl: "https://github.com/iHildy/clawdbot",
   },
   {

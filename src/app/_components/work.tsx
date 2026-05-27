@@ -8,7 +8,7 @@ const workExperiences = [
     period: "Jan 2025 — Current",
     logoSrc: "/work/google.webp",
     logoAlt: "Google logo",
-    description: "Helping build Jules at Google Labs - a proactive autonomous AI coding agent. Employed through Magnit LLC.",
+    description: "Helping build Jules at Google Labs - a proactive autonomous AI coding agent.",
     companyUrl: "https://jules.google/"
   },
   {

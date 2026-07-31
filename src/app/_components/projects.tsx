@@ -44,15 +44,6 @@ const sideProjects = [
     period: "2025",
     isPrivate: false
   },
-  {
-    name: "create-hildy-app",
-    description: "An opinionated version of create-next-app with all my tools and AI rules setup.",
-    techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "tRPC"],
-    githubUrl: "https://github.com/iHildy/create-hildy-app",
-    liveUrl: "https://create-hildy-app.vercel.app/",
-    period: "2025",
-    isPrivate: false
-  },
 ];
 
 export default function Projects() {

@@ -9,29 +9,11 @@ const sideProjects = [
     isPrivate: true
   },
   {
-    name: "Google Jules Raycast Extension",
-    description: "Manage and monitor your Google Jules sessions directly from Raycast.",
-    techStack: ["Raycast", "React", "TypeScript"],
-    githubUrl: "https://github.com/iHildy/jules-agents/tree/main",
-    liveUrl: "https://www.youtube.com/watch?v=yhQqTP7OOFE",
-    period: "2026",
-    isPrivate: false
-  },
-  {
     name: "Google Jules Task Queue",
     description: "An overengineered, task queue for Google Jules power users (AI async coding agent).",
     techStack: ["Next.js", "Tailwind CSS", "TypeScript", "Prisma", "tRPC", "GitHub API"],
     githubUrl: "https://github.com/iHildy/jules-task-queue/tree/main",
     liveUrl: "https://jules.hildy.io",
-    period: "2025",
-    isPrivate: false
-  },
-  {
-    name: "Google Jules Wrapped",
-    description: "An overengineered, task queue for Google Jules power users (AI async coding agent).",
-    techStack: ["NPM", "TypeScript", "resvg"],
-    githubUrl: "https://github.com/iHildy/jules-wrapped",
-    liveUrl: "https://x.com/ianhildy/status/2005911720917647794?s=20",
     period: "2025",
     isPrivate: false
   },
@@ -70,20 +52,6 @@ const sideProjects = [
     liveUrl: "https://create-hildy-app.vercel.app/",
     period: "2025",
     isPrivate: false
-  },
-  {
-    name: "Fraternity Payment Platform",
-    description: "A dashboard for members to setup, modify, defer, and pay for their dues asynchronously. Including reverse engineering GreekBill to create a sync engine.",
-    techStack: ["Next.js", "TypeScript", "Prisma", "Turborepo", "Clerk", "Stripe API"],
-    period: "2025",
-    isPrivate: true
-  },
-  {
-    name: "Fraternity Discord Bot",
-    description: "Providing event notifications, chapter bank managment, member and server managment, with a payment platform integration for bill reminders.",
-    techStack: ["Node.js", "TypeScript", "Discord.js", "Turborepo", "Mercury API", "Google Calendar API"],
-    period: "2025",
-    isPrivate: true
   },
 ];
 

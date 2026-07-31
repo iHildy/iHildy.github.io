@@ -12,7 +12,7 @@ export default function Hero() {
 
         <p className="text-base text-gray-900 dark:text-gray-100">
           Welcome to my corner of the internet. I&apos;m a software engineer and
-          entrepreneur based in Texas. I&apos;m a perfectionist turned interface and tool developer, that loves to make pixel perfect UIs and automations to make lives easier.
+          entrepreneur based in San Francisco. I&apos;m a perfectionist turned interface and tool developer, that loves to make pixel perfect UIs and automations to make lives easier.
         </p>
         <div className="flex flex-row gap-3">
           <Link className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200 p-1 rounded-lg text-black dark:text-white" target="_blank" href="https://github.com/ihildy">

@@ -14,7 +14,7 @@ const personSchema = {
   image: "https://ihildy.com/pfp.webp",
   jobTitle: "Software Engineer",
   description:
-    "Software engineer and entrepreneur based in Texas. Building pixel-perfect UIs and automations to make lives easier.",
+    "Software engineer and entrepreneur based in San Francisco. Building pixel-perfect UIs and automations to make lives easier.",
   sameAs: [
     "https://github.com/ihildy",
     "https://www.linkedin.com/in/ian-hildebrand/",
@@ -22,7 +22,8 @@ const personSchema = {
   ],
   address: {
     "@type": "PostalAddress",
-    addressRegion: "TX",
+    addressLocality: "San Francisco",
+    addressRegion: "CA",
     addressCountry: "US",
   },
 };

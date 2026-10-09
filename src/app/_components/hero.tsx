@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
@@ -15,6 +15,9 @@ export default function Hero() {
           entrepreneur based in San Francisco. I&apos;m a perfectionist turned interface and tool developer, that loves to make pixel perfect UIs and automations to make lives easier.
         </p>
         <div className="flex flex-row gap-3">
+          <Link className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200 p-1 rounded-lg text-black dark:text-white" href="mailto:hello@hildy.io" aria-label="Email Ian">
+            <FaEnvelope className="w-6 h-6" aria-hidden="true" />
+          </Link>
           <Link className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200 p-1 rounded-lg text-black dark:text-white" target="_blank" href="https://github.com/ihildy">
             <FaGithub className="w-6 h-6" />
           </Link>
